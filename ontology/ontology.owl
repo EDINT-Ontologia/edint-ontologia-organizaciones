@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#"
      xml:base="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:dbo="http://dbpedia.org/ontology/"
      xmlns:org="http://www.w3.org/ns/org#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -18,17 +17,17 @@
     <owl:Ontology rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#">
         <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#1.1.1"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/org#"/>
-        <dc:contributor>Antonio Ibáñez</dc:contributor>
-        <dc:contributor>Carlos Jiménez</dc:contributor>
-        <dc:contributor>David Rey Jordán</dc:contributor>
-        <dc:contributor>Imanol Argüeso</dc:contributor>
-        <dc:contributor>José Manuel Crespo</dc:contributor>
-        <dc:contributor>José María Subero</dc:contributor>
-        <dc:contributor>Martín Alvarez</dc:contributor>
-        <dc:contributor>María Dolores Hernández</dc:contributor>
-        <dc:contributor>María Jesús Fernández Ruíz</dc:contributor>
-        <dc:contributor>Toño Velasco</dc:contributor>
-        <dc:title xml:lang="en">The Spanish Public Organizations Ontology</dc:title>
+        <dcterms:contributor>Antonio Ibáñez</dcterms:contributor>
+        <dcterms:contributor>Carlos Jiménez</dcterms:contributor>
+        <dcterms:contributor>David Rey Jordán</dcterms:contributor>
+        <dcterms:contributor>Imanol Argüeso</dcterms:contributor>
+        <dcterms:contributor>José Manuel Crespo</dcterms:contributor>
+        <dcterms:contributor>José María Subero</dcterms:contributor>
+        <dcterms:contributor>Martín Alvarez</dcterms:contributor>
+        <dcterms:contributor>María Dolores Hernández</dcterms:contributor>
+        <dcterms:contributor>María Jesús Fernández Ruíz</dcterms:contributor>
+        <dcterms:contributor>Toño Velasco</dcterms:contributor>
+        <dcterms:title xml:lang="en">The Spanish Public Organizations Ontology</dcterms:title>
         <dcterms:created>2026-05-07</dcterms:created>
         <dcterms:creator>Daniel Doña</dcterms:creator>
         <dcterms:creator>Edna Ruckhaus</dcterms:creator>
