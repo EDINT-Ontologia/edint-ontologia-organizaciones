@@ -39,7 +39,7 @@ Es una actualización de una versión previa de la ontología que extendía la o
         <dcterms:description xml:lang="en">The purpose of this ontology is to provide a common vocabulary for representing public organizations in Spain, as well as aspects related to organizational charts within those organizations.
 It is an update of a previous version of the ontology that extended the W3C Organization Ontology. This version adapts that ontology to meet EDINT requirements. The most relevant changes include removing the Office and Economic-Budgetary Management Unit classes, along with their specific properties, and including edintinf:Facility as a subclass of Site.</dcterms:description>
         <dcterms:issued>2015-02-19</dcterms:issued>
-        <dcterms:license>Creative Commons Attribution 4.0 International (CC BY 4.0)</dcterms:license>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title xml:lang="es">Ontología sobre Organizaciones Públicas en España</dcterms:title>
         <vann:preferredNamespacePrefix>edintorg</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#</vann:preferredNamespaceUri>
