@@ -10,7 +10,7 @@ Es una actualización de una versión previa de la ontología que extendía la o
 
 # Prefijo y espacio de nombres de la ontología (Prefix and namespace)
 
-El prefijo de la ontología es: edintorg y se encuentra publicada en el espacio de nombres: http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#
+El prefijo de la ontología es: edintorg y se encuentra publicada en el espacio de nombres: https://edint.es/def/organizaciones#
 
 # Modelo conceptual de la ontología (Ontology conceptualization)
 
