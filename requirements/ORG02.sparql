@@ -1,6 +1,6 @@
 # ORG02: ¿Qué unidades orgánicas dependen de una entidad de derecho público?
 
-PREFIX edintorg: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#>
+PREFIX edintorg: <https://edint.es/def/organizaciones#>
 PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT DISTINCT ?organicUnit ?organicUnitLabel ?publicLawEntity ?publicLawEntityLabel

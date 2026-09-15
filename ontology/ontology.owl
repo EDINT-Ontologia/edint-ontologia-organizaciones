@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#"
+<rdf:RDF xmlns="https://edint.es/def/organizaciones#"
      xml:base="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion"
      xmlns:dbo="http://dbpedia.org/ontology/"
      xmlns:org="http://www.w3.org/ns/org#"
@@ -14,8 +14,8 @@
      xmlns:esadm="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:edintinf="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#">
-    <owl:Ontology rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#">
-        <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#1.1.1"/>
+    <owl:Ontology rdf:about="https://edint.es/def/organizaciones#">
+        <owl:versionIRI rdf:resource="https://edint.es/def/organizaciones#1.1.1"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/org#"/>
         <dcterms:contributor>Antonio Ibáñez</dcterms:contributor>
         <dcterms:contributor>Carlos Jiménez</dcterms:contributor>
@@ -42,7 +42,7 @@ It is an update of a previous version of the ontology that extended the W3C Orga
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title xml:lang="es">Ontología sobre Organizaciones Públicas en España</dcterms:title>
         <vann:preferredNamespacePrefix>edintorg</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#</vann:preferredNamespaceUri>
+        <vann:preferredNamespaceUri>https://edint.es/def/organizaciones#</vann:preferredNamespaceUri>
         <owl:versionInfo>0.2.0</owl:versionInfo>
     </owl:Ontology>
     
@@ -130,12 +130,12 @@ It is an update of a previous version of the ontology that extended the W3C Orga
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#dependsOnRoot -->
+    <!-- https://edint.es/def/organizaciones#dependsOnRoot -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#dependsOnRoot">
+    <owl:ObjectProperty rdf:about="https://edint.es/def/organizaciones#dependsOnRoot">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/org#subOrganizationOf"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#Organization"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#Organization"/>
+        <rdfs:domain rdf:resource="https://edint.es/def/organizaciones#Organization"/>
+        <rdfs:range rdf:resource="https://edint.es/def/organizaciones#Organization"/>
         <rdfs:comment xml:lang="en">It relates an organization to the organization at the highest level of hierarchy on which it depends.</rdfs:comment>
         <rdfs:comment xml:lang="es">Relaciona una organización con la organización al nivel máximo de jerarquía de la que depende.</rdfs:comment>
         <rdfs:label xml:lang="es">depende de organización raíz</rdfs:label>
@@ -144,10 +144,10 @@ It is an update of a previous version of the ontology that extended the W3C Orga
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasAdministrationLevel -->
+    <!-- https://edint.es/def/organizaciones#hasAdministrationLevel -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasAdministrationLevel">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#Organization"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/organizaciones#hasAdministrationLevel">
+        <rdfs:domain rdf:resource="https://edint.es/def/organizaciones#Organization"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -167,10 +167,10 @@ It is an update of a previous version of the ontology that extended the W3C Orga
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasCompeteceRegion -->
+    <!-- https://edint.es/def/organizaciones#hasCompeteceRegion -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasCompeteceRegion">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#Organization"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/organizaciones#hasCompeteceRegion">
+        <rdfs:domain rdf:resource="https://edint.es/def/organizaciones#Organization"/>
         <rdfs:range rdf:resource="http://dbpedia.org/ontology/GovernmentalAdministrativeRegion"/>
         <rdfs:comment xml:lang="en">It relates an organization to the administrative region where it exercises its powers.</rdfs:comment>
         <rdfs:comment xml:lang="es">Relaciona una organización con el ámbito territorial de ejercicio de sus competencias.</rdfs:comment>
@@ -180,10 +180,10 @@ It is an update of a previous version of the ontology that extended the W3C Orga
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationStatus -->
+    <!-- https://edint.es/def/organizaciones#hasOrganizationStatus -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationStatus">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#Organization"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/organizaciones#hasOrganizationStatus">
+        <rdfs:domain rdf:resource="https://edint.es/def/organizaciones#Organization"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -203,11 +203,11 @@ It is an update of a previous version of the ontology that extended the W3C Orga
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationType -->
+    <!-- https://edint.es/def/organizaciones#hasOrganizationType -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationType">
+    <owl:ObjectProperty rdf:about="https://edint.es/def/organizaciones#hasOrganizationType">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/org#classification"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#Organization"/>
+        <rdfs:domain rdf:resource="https://edint.es/def/organizaciones#Organization"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -254,9 +254,9 @@ It is an update of a previous version of the ontology that extended the W3C Orga
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#deregistrationNote -->
+    <!-- https://edint.es/def/organizaciones#deregistrationNote -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#deregistrationNote">
+    <owl:DatatypeProperty rdf:about="https://edint.es/def/organizaciones#deregistrationNote">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Organization"/>
         <rdfs:comment xml:lang="es">Observaciones relacionadas con la baja de una organización.</rdfs:comment>
         <rdfs:label xml:lang="en">Notes related to an organization&apos;s deregistration.</rdfs:label>
@@ -266,9 +266,9 @@ It is an update of a previous version of the ontology that extended the W3C Orga
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#externalIdentifier -->
+    <!-- https://edint.es/def/organizaciones#externalIdentifier -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#externalIdentifier">
+    <owl:DatatypeProperty rdf:about="https://edint.es/def/organizaciones#externalIdentifier">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
         <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Organization"/>
         <rdfs:comment xml:lang="es">Código externo que designa una organización según la codificación propia de la fuente de provisión.</rdfs:comment>
@@ -279,9 +279,9 @@ It is an update of a previous version of the ontology that extended the W3C Orga
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hierarchicalLevel -->
+    <!-- https://edint.es/def/organizaciones#hierarchicalLevel -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hierarchicalLevel">
+    <owl:DatatypeProperty rdf:about="https://edint.es/def/organizaciones#hierarchicalLevel">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Organization"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment xml:lang="es">Secuencia que identifica el nivel jerárquico relativo de la organización dentro de la entidad a la que pertenece.
@@ -294,9 +294,9 @@ For the root of an administrative level, this field should be 0. For the main (h
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#legalProvision -->
+    <!-- https://edint.es/def/organizaciones#legalProvision -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#legalProvision">
+    <owl:DatatypeProperty rdf:about="https://edint.es/def/organizaciones#legalProvision">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Organization"/>
         <rdfs:comment xml:lang="es">Identificación de la Disposición Legal que regula las competencias de la organización.
 Ejemplo: En el caso del BOE se haría referencia al RD de creación del Organismo como Agencia Estatal: «REAL DECRETO 1495/2007 por el que se crea la Agencia Estatal Boletín Oficial del Estado y se aprueba su estatuto».</rdfs:comment>
@@ -327,9 +327,9 @@ Example: In the case of the Official State Gazette (BOE), reference would be mad
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#OrganicUnit -->
+    <!-- https://edint.es/def/organizaciones#OrganicUnit -->
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#OrganicUnit">
+    <owl:Class rdf:about="https://edint.es/def/organizaciones#OrganicUnit">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#OrganizationalUnit"/>
         <rdfs:comment xml:lang="en">Organic Unit with a hierarchical level greater than 1, which depends on a Public Law Entity.</rdfs:comment>
         <rdfs:comment xml:lang="es">Unidad Orgánica con un nivel jerárquico mayor a 1, que depende de una Entidad de Derecho Público.</rdfs:comment>
@@ -339,9 +339,9 @@ Example: In the case of the Official State Gazette (BOE), reference would be mad
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#Organization -->
+    <!-- https://edint.es/def/organizaciones#Organization -->
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#Organization">
+    <owl:Class rdf:about="https://edint.es/def/organizaciones#Organization">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
         <rdfs:comment xml:lang="es">Organización de la administración pública en España</rdfs:comment>
         <rdfs:comment xml:lang="en">Organization of the public administration in Spain</rdfs:comment>
@@ -351,9 +351,9 @@ Example: In the case of the Official State Gazette (BOE), reference would be mad
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#PublicLawEntity -->
+    <!-- https://edint.es/def/organizaciones#PublicLawEntity -->
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#PublicLawEntity">
+    <owl:Class rdf:about="https://edint.es/def/organizaciones#PublicLawEntity">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
         <rdfs:comment xml:lang="es">Organismo creado para satisfacer necesidades de interés general, excluidos los de carácter mercantil o industrial; que tenga personalidad jurídica; que su actividad se financie mayoritariamente con fondos públicos o que su gestión esté sometida al control público o bien que más de la mitad de los miembros de su órgano de administración, de dirección o vigilancia, sean nombrados por el sector público.
 

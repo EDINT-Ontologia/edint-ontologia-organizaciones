@@ -1,6 +1,6 @@
 ORG04: ¿Cuál es el organismo principal del que depende una unidad?
 
-PREFIX edintorg: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#>
+PREFIX edintorg: <https://edint.es/def/organizaciones#>
 PREFIX org:      <http://www.w3.org/ns/org#>
 PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
 

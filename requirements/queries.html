@@ -194,7 +194,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
             </ul>
         </div>
         <div class="main-content">
-    <section class="file-card" id="ORG01_sparql"><div class="file-header">ORG01.sparql</div><div class="query-block"><span class="query-title">ORG01: ¿Qué organizaciones son entidades de derecho público?</span><div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintorg</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#&gt;</span>
+    <section class="file-card" id="ORG01_sparql"><div class="file-header">ORG01.sparql</div><div class="query-block"><span class="query-title">ORG01: ¿Qué organizaciones son entidades de derecho público?</span><div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintorg</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/organizaciones#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">rdfs</span><span class="p">:</span>     <span class="nl">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span>
 
 <span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="nv">?organization</span> <span class="nv">?label</span>
@@ -208,7 +208,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="p">}</span>
 <span class="k">ORDER BY</span> <span class="nv">?label</span>
 </pre></div>
-</div></section><section class="file-card" id="ORG02_sparql"><div class="file-header">ORG02.sparql</div><div class="query-block"><span class="query-title">ORG02: ¿Qué unidades orgánicas dependen de una entidad de derecho público?</span><div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintorg</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#&gt;</span>
+</div></section><section class="file-card" id="ORG02_sparql"><div class="file-header">ORG02.sparql</div><div class="query-block"><span class="query-title">ORG02: ¿Qué unidades orgánicas dependen de una entidad de derecho público?</span><div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintorg</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/organizaciones#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">rdfs</span><span class="p">:</span>     <span class="nl">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span>
 
 <span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="nv">?organicUnit</span> <span class="nv">?organicUnitLabel</span> <span class="nv">?publicLawEntity</span> <span class="nv">?publicLawEntityLabel</span>
@@ -246,7 +246,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </pre></div>
 </div></section><section class="file-card" id="ORG04_sparql"><div class="file-header">ORG04.sparql</div><div class="query-block"><div class="sparql-code"><pre><span></span><span class="nn">ORG04</span><span class="p">:</span> <span class="err">¿Cuál</span> <span class="err">es</span> <span class="err">el</span> <span class="err">organismo</span> <span class="err">principal</span> <span class="err">del</span> <span class="err">que</span> <span class="err">depende</span> <span class="err">un</span><span class="k">a</span> <span class="err">unidad?</span>
 
-<span class="k">PREFIX</span> <span class="nn">edintorg</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#&gt;</span>
+<span class="k">PREFIX</span> <span class="nn">edintorg</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/organizaciones#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">org</span><span class="p">:</span>      <span class="nl">&lt;http://www.w3.org/ns/org#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">rdfs</span><span class="p">:</span>     <span class="nl">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span>
 
@@ -270,7 +270,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="p">}</span>
 <span class="k">ORDER BY</span> <span class="nv">?unitLabel</span>
 </pre></div>
-</div></section><section class="file-card" id="ORG05_sparql"><div class="file-header">ORG05.sparql</div><div class="query-block"><span class="query-title">ORG05: ¿A qué nivel de administración pertenece una organización?</span><div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintorg</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#&gt;</span>
+</div></section><section class="file-card" id="ORG05_sparql"><div class="file-header">ORG05.sparql</div><div class="query-block"><span class="query-title">ORG05: ¿A qué nivel de administración pertenece una organización?</span><div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintorg</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/organizaciones#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">org</span><span class="p">:</span>      <span class="nl">&lt;http://www.w3.org/ns/org#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span>     <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">rdfs</span><span class="p">:</span>     <span class="nl">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span>
@@ -295,7 +295,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="p">}</span>
 <span class="k">ORDER BY</span> <span class="nv">?organizationLabel</span>
 </pre></div>
-</div></section><section class="file-card" id="ORG06_sparql"><div class="file-header">ORG06.sparql</div><div class="query-block"><span class="query-title">ORG06: ¿Cuál es la situación o estado actual de una organización?</span><div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintorg</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#&gt;</span>
+</div></section><section class="file-card" id="ORG06_sparql"><div class="file-header">ORG06.sparql</div><div class="query-block"><span class="query-title">ORG06: ¿Cuál es la situación o estado actual de una organización?</span><div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintorg</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/organizaciones#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">org</span><span class="p">:</span>      <span class="nl">&lt;http://www.w3.org/ns/org#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span>     <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">rdfs</span><span class="p">:</span>     <span class="nl">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span>
@@ -322,7 +322,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="p">}</span>
 <span class="k">ORDER BY</span> <span class="nv">?organizationLabel</span>
 </pre></div>
-</div></section><section class="file-card" id="ORG07_sparql"><div class="file-header">ORG07.sparql</div><div class="query-block"><span class="query-title">ORG07: ¿Qué organizaciones pertenecen a un determinado nivel de administración?</span><div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintorg</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#&gt;</span>
+</div></section><section class="file-card" id="ORG07_sparql"><div class="file-header">ORG07.sparql</div><div class="query-block"><span class="query-title">ORG07: ¿Qué organizaciones pertenecen a un determinado nivel de administración?</span><div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintorg</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/organizaciones#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">org</span><span class="p">:</span>      <span class="nl">&lt;http://www.w3.org/ns/org#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span>     <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">rdfs</span><span class="p">:</span>     <span class="nl">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span>
@@ -347,7 +347,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="p">}</span>
 <span class="k">ORDER BY</span> <span class="nv">?organizationLabel</span>
 </pre></div>
-</div></section><section class="file-card" id="ORG08_sparql"><div class="file-header">ORG08.sparql</div><div class="query-block"><span class="query-title">ORG08: ¿En qué territorio ejerce sus competencias una organización?</span><div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintorg</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#&gt;</span>
+</div></section><section class="file-card" id="ORG08_sparql"><div class="file-header">ORG08.sparql</div><div class="query-block"><span class="query-title">ORG08: ¿En qué territorio ejerce sus competencias una organización?</span><div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintorg</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/organizaciones#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">org</span><span class="p">:</span>      <span class="nl">&lt;http://www.w3.org/ns/org#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">rdfs</span><span class="p">:</span>     <span class="nl">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span>
 
@@ -371,7 +371,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="p">}</span>
 <span class="k">ORDER BY</span> <span class="nv">?organizationLabel</span>
 </pre></div>
-</div></section><section class="file-card" id="ORG09_sparql"><div class="file-header">ORG09.sparql</div><div class="query-block"><span class="query-title">ORG09: ¿Qué organizaciones están dadas de baja o han dejado de estar activas?</span><div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintorg</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#&gt;</span>
+</div></section><section class="file-card" id="ORG09_sparql"><div class="file-header">ORG09.sparql</div><div class="query-block"><span class="query-title">ORG09: ¿Qué organizaciones están dadas de baja o han dejado de estar activas?</span><div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintorg</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/organizaciones#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">org</span><span class="p">:</span>      <span class="nl">&lt;http://www.w3.org/ns/org#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span>     <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">rdfs</span><span class="p">:</span>     <span class="nl">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span>
