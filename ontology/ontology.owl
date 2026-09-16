@@ -29,7 +29,7 @@
         <dcterms:contributor>María Dolores Hernández</dcterms:contributor>
         <dcterms:contributor>María Jesús Fernández Ruíz</dcterms:contributor>
         <dcterms:contributor>Toño Velasco</dcterms:contributor>
-        <dcterms:title xml:lang="en">The Spanish Public Organizations Ontology</dcterms:title>
+        <dcterms:title xml:lang="en">EDINT Public Organizations Ontology</dcterms:title>
         <dcterms:created>2026-05-07</dcterms:created>
         <dcterms:creator>Daniel Doña</dcterms:creator>
         <dcterms:creator>Edna Ruckhaus</dcterms:creator>
@@ -42,7 +42,7 @@ Es una actualización de una versión previa de la ontología que extendía la o
 It is an update of a previous version of the ontology that extended the W3C Organization Ontology. This version adapts that ontology to meet EDINT requirements. The most relevant changes include removing the Office and Economic-Budgetary Management Unit classes, along with their specific properties, and including edintinf:Facility as a subclass of Site.</dcterms:description>
         <dcterms:issued>2015-02-19</dcterms:issued>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <dcterms:title xml:lang="es">Ontología sobre Organizaciones Públicas en España</dcterms:title>
+        <dcterms:title xml:lang="es">Ontología EDINT de Organizaciones Públicas</dcterms:title>
         <vann:preferredNamespacePrefix>edintorg</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://edint.es/def/organizaciones#</vann:preferredNamespaceUri>
         <owl:versionInfo>0.2.0</owl:versionInfo>

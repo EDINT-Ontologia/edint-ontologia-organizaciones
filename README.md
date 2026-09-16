@@ -1,4 +1,4 @@
-# Ontología EDINT de Organizaciones Públicas (EDINT Public Organizations Ontology)
+# Ontología EDINT de Organizaciones Públicas
 
 La ontología de Organizaciones públicas representa el dominio de los organismos públicos (y sus organigramas) en España.
 Está siendo desarrollada en el contexto del Espacio de Datos para las Infraestructuras Urbanas Inteligentes ([EDINT](https://edint.es/)).
