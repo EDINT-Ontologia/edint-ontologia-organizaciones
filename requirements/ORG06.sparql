@@ -13,7 +13,7 @@ WHERE {
   ?organization a org:Organization ;
                 edintorg:hasOrganizationStatus ?status .
   ?status a skos:Concept ;
-          skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/edint/OrganizationStatus> .
+          skos:inScheme <https://edint.es/kos/OrganizationStatus> .
 
   OPTIONAL {
     ?organization rdfs:label ?organizationLabel .
