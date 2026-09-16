@@ -17,7 +17,7 @@
      xmlns:schema="http://schema.org/"
      xmlns:bibo="http://purl.org/ontology/bibo/">
     <owl:Ontology rdf:about="https://edint.es/def/organizaciones#">
-        <owl:versionIRI rdf:resource="https://edint.es/def/organizaciones#1.1.1"/>
+        <owl:versionIRI rdf:resource="https://edint.es/def/organizaciones/0.1.1"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/org#"/>
         <dcterms:contributor>Antonio Ibáñez</dcterms:contributor>
         <dcterms:contributor>Carlos Jiménez</dcterms:contributor>
@@ -60,7 +60,7 @@ It is an update of a previous version of the ontology that extended the W3C Orga
         <dcterms:title xml:lang="es">Ontología EDINT de Organizaciones Públicas</dcterms:title>
         <vann:preferredNamespacePrefix>edintorg</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://edint.es/def/organizaciones#</vann:preferredNamespaceUri>
-        <owl:versionInfo>0.2.0</owl:versionInfo>
+        <owl:versionInfo>0.1.1</owl:versionInfo>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-organizaciones/releases/tag/v0.1.0"/>
     <dcterms:publisher rdf:resource="https://www.femp.es/"/>
     <dcterms:bibliographicCitation xml:lang="es">Ontología EDINT de Organizaciones Públicas. EDINT. Revision: v0.1.1.</dcterms:bibliographicCitation>
