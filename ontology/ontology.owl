@@ -13,7 +13,7 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:esadm="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#"
      xmlns:dcterms="http://purl.org/dc/terms/"
-     xmlns:edintinf="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#">
+     xmlns:edintinf="https://edint.es/def/infraestructura#">
     <owl:Ontology rdf:about="https://edint.es/def/organizaciones#">
         <owl:versionIRI rdf:resource="https://edint.es/def/organizaciones#1.1.1"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/org#"/>
@@ -410,11 +410,11 @@ Morales, F. J. (2007). La Contratación del Sector Público. Recuperado el 17 de
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility -->
+    <!-- https://edint.es/def/infraestructura#Facility -->
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility">
+    <owl:Class rdf:about="https://edint.es/def/infraestructura#Facility">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Site"/>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#"/>
+        <rdfs:isDefinedBy rdf:resource="https://edint.es/def/infraestructura#"/>
     </owl:Class>
     
 
