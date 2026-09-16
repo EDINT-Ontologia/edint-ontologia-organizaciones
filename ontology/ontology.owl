@@ -154,7 +154,7 @@ It is an update of a previous version of the ontology that extended the W3C Orga
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/edint/AdministrationLevel"/>
+                        <owl:hasValue rdf:resource="https://edint.es/kos/AdministrationLevel"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -190,7 +190,7 @@ It is an update of a previous version of the ontology that extended the W3C Orga
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/edint/OrganizationStatus"/>
+                        <owl:hasValue rdf:resource="https://edint.es/kos/OrganizationStatus"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -214,7 +214,7 @@ It is an update of a previous version of the ontology that extended the W3C Orga
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/edint/OrganizationType"/>
+                        <owl:hasValue rdf:resource="https://edint.es/kos/OrganizationType"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -436,25 +436,25 @@ Morales, F. J. (2007). La Contratación del Sector Público. Recuperado el 17 de
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/edint/AdministrationLevel -->
+    <!-- https://edint.es/kos/AdministrationLevel -->
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/edint/AdministrationLevel">
+    <owl:NamedIndividual rdf:about="https://edint.es/kos/AdministrationLevel">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/edint/OrganizationStatus -->
+    <!-- https://edint.es/kos/OrganizationStatus -->
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/edint/OrganizationStatus">
+    <owl:NamedIndividual rdf:about="https://edint.es/kos/OrganizationStatus">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/edint/OrganizationType -->
+    <!-- https://edint.es/kos/OrganizationType -->
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/edint/OrganizationType">
+    <owl:NamedIndividual rdf:about="https://edint.es/kos/OrganizationType">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     
