@@ -14,7 +14,7 @@
      xmlns:esadm="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:edintinf="https://edint.es/def/infraestructura#"
-     xmlns:schema="http://schema.org/"
+     xmlns:schema="https://schema.org/"
      xmlns:bibo="http://purl.org/ontology/bibo/"
      xmlns:widoco="https://w3id.org/widoco/vocab#">
     <owl:Ontology rdf:about="https://edint.es/def/organizaciones#">
@@ -60,7 +60,7 @@ It is an update of a previous version of the ontology that extended the W3C Orga
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title xml:lang="es">Ontología EDINT de Organizaciones Públicas</dcterms:title>
         <vann:preferredNamespacePrefix>edintorg</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>https://edint.es/def/organizaciones#</vann:preferredNamespaceUri>
+        <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/organizaciones#"/>
         <owl:versionInfo>0.1.1</owl:versionInfo>
         <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-05-07</dcterms:created>
         <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:issued>
