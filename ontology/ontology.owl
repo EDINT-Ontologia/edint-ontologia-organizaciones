@@ -31,6 +31,8 @@
         <dcterms:contributor>María Jesús Fernández Ruíz</dcterms:contributor>
         <dcterms:contributor>Toño Velasco</dcterms:contributor>
         <dcterms:title xml:lang="en">EDINT Public Organizations Ontology</dcterms:title>
+        <rdfs:label xml:lang="es">Organizaciones Públicas</rdfs:label>
+        <rdfs:label xml:lang="en">Public Organizations</rdfs:label>
         <dcterms:creator rdf:parseType="Resource">
             <foaf:name>Daniel Doña</foaf:name>
             <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
