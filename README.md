@@ -1,4 +1,4 @@
-# Ontología EDINT de Organizaciones Públicas (EDINT Public Organizations Ontology)
+# Ontología EDINT de Organizaciones Públicas
 
 [![Documentación](https://img.shields.io/badge/documentaci%C3%B3n-edint.es-blue)](https://edint.es/def/organizaciones)
 ![Prefijo](https://img.shields.io/badge/prefijo-edintorg-informational)
