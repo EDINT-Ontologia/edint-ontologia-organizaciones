@@ -1,0 +1,1 @@
+Carpeta para la generación de ejemplos de uso de la ontología
