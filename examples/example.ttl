@@ -1,0 +1,208 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+# Vocabularios
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix edintorg: <https://edint.es/def/organizaciones#> .
+@prefix edintkos:   <https://edint.es/kos/> .
+@prefix edintkosorgsta: <https://edint.es/kos/OrganizationStatus/> .
+@prefix edintkosadmlev: <https://edint.es/kos/AdministrationLevel/> .
+@prefix edintkosorgtype: <https://edint.es/kos/OrganizationType/> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema:<http://schema.org/> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+
+# ===========================================================================
+# Entidades de derecho público (PublicLawEntity / FormalOrganization)
+# ===========================================================================
+
+## Conceptos SKOS de estado de organización
+edintkosorgsta:InForce    a skos:Concept ;
+    skos:inScheme  edintkos:OrganizationStatus ;
+    skos:prefLabel "Vigente"@es , "In force"@en .
+
+edintkosorgsta:Extinct  a skos:Concept ;
+    skos:inScheme  edintkos:OrganizationStatus ;
+    skos:prefLabel "Extinguido"@es , "Extinct"@en .
+
+edintkosorgsta:Cancelled a skos:Concept ;
+    skos:inScheme  edintkos:OrganizationStatus ;
+    skos:prefLabel "Anulado"@es , "Cancelled"@en .
+
+## Ayuntamiento de Zaragoza
+<https://example.org/recurso/ayto-zaragoza>
+    a                   edintorg:PublicLawEntity ,
+                        org:Organization ,
+                        org:FormalOrganization ;
+    rdfs:label          "Ayuntamiento de Zaragoza"@es ;
+    dct:identifier      "50.115.000.00" ;
+    edintorg:externalIdentifier "CódigoExternoAytoZar" ;
+    edintorg:hierarchicalLevel 0 ;
+    edintorg:hasAdministrationLevel  edintkosadmlev:3 ;
+    edintorg:hasCompetenceRegion    <http://dbpedia.org/resource/Province_of_Zaragoza> ;
+    edintorg:hasOrganizationType    edintkosorgtype:AY ;
+    edintorg:hasOrganizationStatus  edintkosorgsta:InForce ;
+    edintorg:legalProvision       "Real Decreto Legislativo 5/2017, de 3 de junio, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales" ;
+    schema:address [
+        a                   schema:PostalAddress ;
+        schema:streetAddress "Plaza del Ayuntamiento, 1" ;
+        schema:addressLocality "Zaragoza" ;
+        schema:postalCode    "50001" ;
+        schema:addressCountry "ES"
+    ] ;
+    schema:telephone "+34 976 000 000" ;
+    schema:email "info@zaragoza.es" .
+
+## Diputación Provincial de Huesca
+<https://example.org/recurso/dip-huesca>
+    a                   edintorg:PublicLawEntity ,
+                        org:Organization ,
+                        org:FormalOrganization ;
+    rdfs:label          "Diputación Provincial de Huesca"@es ;
+    dct:identifier      "22.115.000.00" ;
+    edintorg:externalIdentifier "CódigoExternoDipHuesca" ;
+    edintorg:hierarchicalLevel 0 ;
+    edintorg:hasAdministrationLevel  edintkosadmlev:3 ;
+    edintorg:hasCompetenceRegion    <http://dbpedia.org/resource/Province_of_Huesca> ;
+    edintorg:hasOrganizationType    edintkosorgtype:DP ;
+    edintorg:hasOrganizationStatus  edintkosorgsta:InForce ;
+    edintorg:legalProvision       "Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público" ;
+    schema:address [
+        a                   schema:PostalAddress ;
+        schema:streetAddress "Calle Estafaniella, 42" ;
+        schema:addressLocality "Huesca" ;
+        schema:postalCode    "22001" ;
+        schema:addressCountry "ES"
+    ] ;
+    schema:telephone "+34 974 200 000" ;
+    schema:email "dipuhuesca@dipuhuesca.es" .
+
+## Junta de Andalucía (para cubrir Administración autonómica)
+<https://example.org/recurso/junta-andalucia>
+    a                   edintorg:PublicLawEntity ,
+                        org:Organization ,
+                        org:FormalOrganization ;
+    rdfs:label          "Junta de Andalucía"@es ;
+    dct:identifier      "16.115.000.00" ;
+    edintorg:hierarchicalLevel 0 ;
+    edintorg:hasAdministrationLevel  edintkosadmlev:2 ;
+    edintorg:hasCompetenceRegion    <http://dbpedia.org/resource/Andalusia> ;
+    edintorg:hasOrganizationType    edintkosorgtype:CA ;
+    edintorg:hasOrganizationStatus  edintkosorgsta:InForce ;
+    edintorg:legalProvision       "Ley orgánica 6/2006, de 5 de julio, de Reforma de la Estatuto de Autonomía para Andalucía" ;
+    schema:telephone "+34 955 000 000" .
+
+# ===========================================================================
+# Entidad extinta (ORG09: status Anulado / Extinguido + deregistrationNote)
+# ===========================================================================
+
+<https://example.org/recurso/mancomunidad-vielha>
+    a                   org:Organization ,
+                        org:FormalOrganization ;
+    rdfs:label          "Mancomunidad Comarcal de la Vall d'Aran"@es ;
+    dct:identifier      "95.115.000.00" ;
+    edintorg:hasOrganizationStatus  edintkosorgsta:Extinct ;
+    edintorg:deregistrationNote   "Mancomunidad disuelta por fusión con otras entidades locales conforme al Decreto 41/2019" ;
+    edintorg:hasAdministrationLevel  edintkosadmlev:3 ;
+    edintorg:hasCompetenceRegion    <http://dbpedia.org/resource/Vall_d_Aran> .
+
+# ===========================================================================
+# Organizaciones con estado Anulado (ORg09)
+# ===========================================================================
+
+<https://example.org/recurso/consorcio-viejo>
+    a                   org:Organization ,
+                        org:FormalOrganization ;
+    rdfs:label          "Consorcio Antiguo de Servicios"@es ;
+    dct:identifier      "50.200.000.00" ;
+    edintorg:hasOrganizationStatus  edintkosorgsta:Cancelled ;
+    edintorg:deregistrationNote   "Consorcio anulado por expiración del plazo establecido en la creación" ;
+    edintorg:hasAdministrationLevel  edintkosadmlev:3 .
+
+# ===========================================================================
+# Unidades Orgánicas (OrganicUnit — requieren hierarchicalLevel > 1
+# y dependen de una PublicLawEntity)
+# ===========================================================================
+
+## Unidad Orgánica dentro del Ayuntamiento de Zaragoza
+<https://example.org/recurso/uo-planificacion-urbanistica>
+    a                   edintorg:OrganicUnit ,
+                        org:OrganizationalUnit ,
+                        org:Organization ;
+    rdfs:label          "Unidad de Planificación Urbanística"@es ;
+    edintorg:hierarchicalLevel 2 ;
+    edintorg:dependsOnRoot  <https://example.org/recurso/ayto-zaragoza> .
+
+## Unidad Orgánica dentro de la Diputación de Huesca
+<https://example.org/recurso/uo-obras-publicas>
+    a                   edintorg:OrganicUnit ,
+                        org:OrganizationalUnit ,
+                        org:Organization ;
+    rdfs:label          "Unidad de Obras Públicas"@es ;
+    edintorg:hierarchicalLevel 2 ;
+    edintorg:dependsOnRoot  <https://example.org/recurso/dip-huesca> .
+
+# ===========================================================================
+# Personas (foaf:Person)
+# ===========================================================================
+
+<https://example.org/recurso/persona-ana-martinez>
+    a                   foaf:Person ;
+    foaf:name   "Ana Martínez López" .
+
+<https://example.org/recurso/persona-carlos-garcia>
+    a                   foaf:Person ;
+    foaf:name   "Carlos García Ruiz" .
+
+<https://example.org/recurso/persona-laura-sanchez>
+    a                   foaf:Person ;
+    foaf:name   "Laura Sánchez Pérez" .
+
+# ===========================================================================
+# Membership / roles (ORG10)
+# ===========================================================================
+
+## Ana Martínez → alcalde/ayunta de Zaragoza
+<https://example.org/recurso/membership-ana-alcalde>
+    a                   org:Membership ;
+    org:member      <https://example.org/recurso/persona-ana-martinez> ;
+    org:organization    <https://example.org/recurso/ayto-zaragoza> ;
+    org:role      <https://example.org/recurso/rol-alcalde> .
+
+## Carlos García → concejal en Zaragoza
+<https://example.org/recurso/membership-carlos-concejal>
+    a                   org:Membership ;
+    org:member      <https://example.org/recurso/persona-carlos-garcia> ;
+    org:organization    <https://example.org/recurso/ayto-zaragoza> ;
+    org:role      <https://example.org/recurso/rol-concejal> .
+
+## Laura Sánchez → presidenta diputación Huesca
+<https://example.org/recurso/membership-laura-presidenta>
+    a                   org:Membership ;
+    org:member      <https://example.org/recurso/persona-laura-sanchez> ;
+    org:organization    <https://example.org/recurso/dip-huesca> ;
+    org:role      <https://example.org/recurso/rol-presidenta> .
+
+# ===========================================================================
+# Roles (SKOS concepts in a scheme — los ORG10 buscan skos:prefLabel para el role)
+# ===========================================================================
+
+<https://example.org/recurso/rol-alcalde>
+    a                   skos:Concept ;
+    skos:inScheme   edintkos:OrganizationStatus ;
+    skos:prefLabel  "Alcalde"@es , "Mayor"@en .
+
+<https://example.org/recurso/rol-concejal>
+    a                   skos:Concept ;
+    skos:inScheme   edintkos:OrganizationStatus ;
+    skos:prefLabel  "Concejal"@es , "Councillor"@en .
+
+<https://example.org/recurso/rol-presidenta>
+    a                   skos:Concept ;
+    skos:inScheme   edintkos:OrganizationStatus ;
+    skos:prefLabel  "Presidenta"@es , "President"@en .
