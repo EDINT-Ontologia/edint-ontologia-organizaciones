@@ -1,0 +1,214 @@
+@prefix : <https://edint.es/def/organizaciones#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix edintinf: <https://edint.es/def/infraestructura#> .
+@prefix esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://astrea.linkeddata.es/shapes#02990309b6ffa09d3aeb37c0cf0f0523> a sh:PropertyShape ;
+    rdfs:label """Identification of the legal provision that regulates the organization's powers.
+Example: In the case of the Official State Gazette (BOE), reference would be made to the Royal Decree establishing the agency as a State Agency: "Royal Decree 1495/2007 establishing the State Agency Official State Gazette and approving its statutes.\""""@en,
+        "legal provision"@en,
+        """Identificación de la Disposición Legal que regula las competencias de la organización.
+Ejemplo: En el caso del BOE se haría referencia al RD de creación del Organismo como Agencia Estatal: «REAL DECRETO 1495/2007 por el que se crea la Agencia Estatal Boletín Oficial del Estado y se aprueba su estatuto»."""@es,
+        "disposición legal"@es ;
+    sh:description """Identification of the legal provision that regulates the organization's powers.
+Example: In the case of the Official State Gazette (BOE), reference would be made to the Royal Decree establishing the agency as a State Agency: "Royal Decree 1495/2007 establishing the State Agency Official State Gazette and approving its statutes.\""""@en,
+        """Identificación de la Disposición Legal que regula las competencias de la organización.
+Ejemplo: En el caso del BOE se haría referencia al RD de creación del Organismo como Agencia Estatal: «REAL DECRETO 1495/2007 por el que se crea la Agencia Estatal Boletín Oficial del Estado y se aprueba su estatuto»."""@es ;
+    sh:name "legal provision"@en,
+        "disposición legal"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :legalProvision .
+
+<https://astrea.linkeddata.es/shapes#28430350e43e6d443c6c0d062af80c09> rdfs:label "It relates an organization to a skos concept that is in the administration level taxonomy of to which an organization belongs."@en,
+        "has administration level"@en,
+        "Relaciona una organización con un concepto skos que está en la taxonomía de nivel de administración al que pertenece una organización."@es,
+        "tiene nivel de administración"@es ;
+    sh:description "It relates an organization to a skos concept that is in the administration level taxonomy of to which an organization belongs."@en,
+        "Relaciona una organización con un concepto skos que está en la taxonomía de nivel de administración al que pertenece una organización."@es ;
+    sh:name "has administration level"@en,
+        "tiene nivel de administración"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#2a5638bb60ea2b6cc9dad6b050cc0c9e> a sh:NodeShape ;
+    rdfs:isDefinedBy esadm: ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass esadm:Provincia .
+
+<https://astrea.linkeddata.es/shapes#37965e0183e52604b4172e4f7ea4055a> a sh:NodeShape ;
+    rdfs:isDefinedBy edintinf: ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass edintinf:Facility .
+
+<https://astrea.linkeddata.es/shapes#424629c3a0e7fc5a2d67540f83523f44> rdfs:label "It relates an organization to a skos concept that is in the taxonomy of status or legal/functional situation of an organization."@en,
+        "has organization status"@en,
+        "Relaciona una organización con un concepto skos que está en la taxonomía de estados o situación jurídico/funcional de una organización."@es,
+        "tiene estado de organización"@es ;
+    sh:description "It relates an organization to a skos concept that is in the taxonomy of status or legal/functional situation of an organization."@en,
+        "Relaciona una organización con un concepto skos que está en la taxonomía de estados o situación jurídico/funcional de una organización."@es ;
+    sh:name "has organization status"@en,
+        "tiene estado de organización"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#69bfc24827569ed9036ecae89a53d3c7> a sh:PropertyShape ;
+    rdfs:label skos: ;
+    sh:description skos: ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path skos:inScheme .
+
+<https://astrea.linkeddata.es/shapes#70f3c6343f52da6500f95ca0fca6f56e> a sh:NodeShape ;
+    rdfs:isDefinedBy esadm: ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass esadm:Autonomia .
+
+<https://astrea.linkeddata.es/shapes#74ac90c9c816d92423aaedea3c4d9dd8> a sh:NodeShape ;
+    sh:property <https://astrea.linkeddata.es/shapes#71e2df710adb9b6364690b4209b68ada> ;
+    sh:targetClass org:Organization .
+
+<https://astrea.linkeddata.es/shapes#7626ef13ecb7df85d88612be290e8712> a sh:NodeShape ;
+    rdfs:label "Organization"@en,
+        "Organización"@es ;
+    sh:description "Organization of the public administration in Spain"@en,
+        "Organización de la administración pública en España"@es ;
+    sh:name "Organization"@en,
+        "Organización"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#46ecdcd4defd1053f1abe95303f723cd>,
+        <https://astrea.linkeddata.es/shapes#f47bccd62d990ea28a0047395b1c537a> ;
+    sh:targetClass :Organization .
+
+<https://astrea.linkeddata.es/shapes#8199a6f771a5c8bb1e91db392a8277f8> a sh:NodeShape ;
+    rdfs:label "Organic Unit"@en,
+        "Unidad Orgánica"@es ;
+    sh:description "Organic Unit with a hierarchical level greater than 1, which depends on a Public Law Entity."@en,
+        "Unidad Orgánica con un nivel jerárquico mayor a 1, que depende de una Entidad de Derecho Público."@es ;
+    sh:name "Organic Unit"@en,
+        "Unidad Orgánica"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass :OrganicUnit .
+
+<https://astrea.linkeddata.es/shapes#993b6589c994d15205e34fdcbae76687> a sh:NodeShape ;
+    rdfs:isDefinedBy esadm: ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass esadm:Distrito .
+
+<https://astrea.linkeddata.es/shapes#9e8fc937658bda7beceb6a3c16537508> a sh:PropertyShape ;
+    rdfs:isDefinedBy dcterms: ;
+    sh:nodeKind sh:Literal ;
+    sh:path dcterms:identifier .
+
+<https://astrea.linkeddata.es/shapes#a50cdaca510203abad1c51ac62efc085> a sh:PropertyShape ;
+    rdfs:label "External code that designates an organization according to the coding system of the source of provision."@en,
+        "external identifier"@en,
+        "Código externo que designa una organización según la codificación propia de la fuente de provisión."@es,
+        "identificador externo"@es ;
+    sh:description "External code that designates an organization according to the coding system of the source of provision."@en,
+        "Código externo que designa una organización según la codificación propia de la fuente de provisión."@es ;
+    sh:name "external identifier"@en,
+        "identificador externo"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :externalIdentifier .
+
+<https://astrea.linkeddata.es/shapes#a9164f9cf387701ed790d289860321de> a sh:NodeShape ;
+    rdfs:label "An organization created to meet needs of general interest, excluding those of a commercial or industrial nature; that has legal personality; whose activity is financed mainly with public funds or whose management is subject to public control or in which more than half of the members of its administrative, management or supervisory body are appointed by the public sector."@en,
+        "Public Law Entity"@en,
+        "Entidad de Derecho Público"@es ;
+    sh:description """Organismo creado para satisfacer necesidades de interés general, excluidos los de carácter mercantil o industrial; que tenga personalidad jurídica; que su actividad se financie mayoritariamente con fondos públicos o que su gestión esté sometida al control público o bien que más de la mitad de los miembros de su órgano de administración, de dirección o vigilancia, sean nombrados por el sector público.
+
+Morales, F. J. (2007). La Contratación del Sector Público. Recuperado el 17 de febrero de 2015, de https://books.google.es/books?id=RozAMdGDMDIC&pg=PA1&lpg=PA1&dq=la+contratación+del+sector+publico+f.+javier+escrihuela"""@es ;
+    sh:name "An organization created to meet needs of general interest, excluding those of a commercial or industrial nature; that has legal personality; whose activity is financed mainly with public funds or whose management is subject to public control or in which more than half of the members of its administrative, management or supervisory body are appointed by the public sector."@en,
+        "Public Law Entity"@en,
+        "Entidad de Derecho Público"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass :PublicLawEntity .
+
+<https://astrea.linkeddata.es/shapes#aef1a78016b3598e01dd7671934b50b4> a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass skos:ConceptScheme .
+
+<https://astrea.linkeddata.es/shapes#b98188c706c3dfbcbc464d5a7f516879> rdfs:label "It relates an organization to a skos concept that is in the taxonomy of organization types to which an organization belongs."@en,
+        "has organization type"@en,
+        "Relaciona una organización con un concepto skos que está en la taxonomía de tipos de organización al que pertenece una organización."@es,
+        "tiene tipo de organización"@es ;
+    sh:description "It relates an organization to a skos concept that is in the taxonomy of organization types to which an organization belongs."@en,
+        "Relaciona una organización con un concepto skos que está en la taxonomía de tipos de organización al que pertenece una organización."@es ;
+    sh:name "has organization type"@en,
+        "tiene tipo de organización"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#caee6789e95b954b35a010facb2a6e6c> a sh:NodeShape ;
+    rdfs:isDefinedBy dbo: ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass dbo:GovernmentalAdministrativeRegion .
+
+<https://astrea.linkeddata.es/shapes#e4d3c8ee49fa2d31f3fa5690f4a6e0d7> a sh:PropertyShape ;
+    rdfs:label "note on the deregistration",
+        "Notes related to an organization's deregistration."@en,
+        "Observaciones relacionadas con la baja de una organización."@es,
+        "observación de baja"@es ;
+    sh:description "Observaciones relacionadas con la baja de una organización."@es ;
+    sh:name "note on the deregistration",
+        "Notes related to an organization's deregistration."@en,
+        "observación de baja"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :deregistrationNote .
+
+<https://astrea.linkeddata.es/shapes#fb5e5ec0f5168b9413625b1ab5db1e7c> a sh:NodeShape ;
+    rdfs:isDefinedBy esadm: ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass esadm:Comarca .
+
+<https://astrea.linkeddata.es/shapes#fbbdec372458b6ca648be3b4d8fb667e> a sh:NodeShape ;
+    rdfs:isDefinedBy esadm: ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass esadm:Municipio .
+
+<https://astrea.linkeddata.es/shapes#46ecdcd4defd1053f1abe95303f723cd> a sh:PropertyShape ;
+    rdfs:label "It relates an organization to the organization at the highest level of hierarchy on which it depends."@en,
+        "depends on root organization"@en,
+        "Relaciona una organización con la organización al nivel máximo de jerarquía de la que depende."@es,
+        "depende de organización raíz"@es ;
+    sh:class :Organization ;
+    sh:description "It relates an organization to the organization at the highest level of hierarchy on which it depends."@en,
+        "Relaciona una organización con la organización al nivel máximo de jerarquía de la que depende."@es ;
+    sh:name "depends on root organization"@en,
+        "depende de organización raíz"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :dependsOnRoot .
+
+<https://astrea.linkeddata.es/shapes#71e2df710adb9b6364690b4209b68ada> a sh:PropertyShape ;
+    rdfs:label """This sequence identifies the relative hierarchical level of the organization within the entity to which it belongs.
+For the root of an administrative level, this field should be 0. For the main (highest level) unit of any Ministry, Autonomous Community, or Local Entity, the field will have the value 1. Beyond this, the number will be incremented as appropriate."""@en,
+        "hierarchical level"@en,
+        """Secuencia que identifica el nivel jerárquico relativo de la organización dentro de la entidad a la que pertenece.
+Para la raíz de un nivel de administración, este campo deberá ser 0. Para la unidad principal (de máximo nivel) de cualquier Ministerio, Comunidad Autónoma o Entidad Local el campo tomará el valor 1. Más allá de esto, el número se irá incrementando según convenga."""@es,
+        "nivel jerárquico"@es ;
+    sh:datatype xsd:integer ;
+    sh:description """This sequence identifies the relative hierarchical level of the organization within the entity to which it belongs.
+For the root of an administrative level, this field should be 0. For the main (highest level) unit of any Ministry, Autonomous Community, or Local Entity, the field will have the value 1. Beyond this, the number will be incremented as appropriate."""@en,
+        """Secuencia que identifica el nivel jerárquico relativo de la organización dentro de la entidad a la que pertenece.
+Para la raíz de un nivel de administración, este campo deberá ser 0. Para la unidad principal (de máximo nivel) de cualquier Ministerio, Comunidad Autónoma o Entidad Local el campo tomará el valor 1. Más allá de esto, el número se irá incrementando según convenga."""@es ;
+    sh:name "hierarchical level"@en,
+        "nivel jerárquico"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :hierarchicalLevel ;
+    sh:pattern "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#f47bccd62d990ea28a0047395b1c537a> a sh:PropertyShape ;
+    rdfs:label "It relates an organization to the administrative region where it exercises its powers."@en,
+        "has competence region"@en,
+        "Relaciona una organización con el ámbito territorial de ejercicio de sus competencias."@es,
+        "tiene ámbito de competencia"@es ;
+    sh:class dbo:GovernmentalAdministrativeRegion ;
+    sh:description "It relates an organization to the administrative region where it exercises its powers."@en,
+        "Relaciona una organización con el ámbito territorial de ejercicio de sus competencias."@es ;
+    sh:name "has competence region"@en,
+        "tiene ámbito de competencia"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :hasCompeteceRegion .
+
