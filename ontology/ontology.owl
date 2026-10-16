@@ -530,7 +530,7 @@ Morales, F. J. (2007). La Contratación del Sector Público. Recuperado el 17 de
         <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
     </rdf:Description>
     <!-- Nombres de fichero de las serializaciones generadas (vocabulario Widoco) -->
-    <owl:Ontology rdf:about="https://edint.es/def/organizaciones#">
+    <rdf:Description rdf:about="https://edint.es/def/organizaciones#">
         <widoco:rdfxmlSerialization>ontology.rdf</widoco:rdfxmlSerialization>
         <widoco:turtleSerialization>ontology.ttl</widoco:turtleSerialization>
         <widoco:ntSerialization>ontology.nt</widoco:ntSerialization>
@@ -563,7 +563,7 @@ Morales, F. J. (2007). La Contratación del Sector Público. Recuperado el 17 de
                 <rdfs:label xml:lang="en">Infrastructure (edintinf)</rdfs:label>
             </rdf:Description>
         </widoco:vocabularyLabel>
-</owl:Ontology>
+</rdf:Description>
 </rdf:RDF>
 
 
