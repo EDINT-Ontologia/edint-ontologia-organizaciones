@@ -34,7 +34,7 @@ Es una actualización de una versión previa de la ontología que extendía la o
                                                                                """The purpose of this ontology is to provide a common vocabulary for representing public organizations in Spain, as well as aspects related to organizational charts within those organizations.
 It is an update of a previous version of the ontology that extended the W3C Organization Ontology. This version adapts that ontology to meet EDINT requirements. The most relevant changes include removing the Office and Economic-Budgetary Management Unit classes, along with their specific properties, and including edintinf:Facility as a subclass of Site."""@en ;
                                         <http://purl.org/dc/terms/issued> "2026-09-17"^^xsd:date ;
-                                        <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                        <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-sa/4.0/> ;
                                         <http://purl.org/dc/terms/modified> "2026-09-17"^^xsd:date ;
                                         <http://purl.org/dc/terms/publisher> _:genid6 ;
                                         <http://purl.org/dc/terms/title> "EDINT Public Organizations Ontology"@en ,
