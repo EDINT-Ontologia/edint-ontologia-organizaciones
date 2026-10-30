@@ -1,25 +1,30 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://edint.es/def/organizaciones#"
-     xml:base="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion"
+     xml:base="https://edint.es/def/organizaciones"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:dbo="http://dbpedia.org/ontology/"
      xmlns:org="http://www.w3.org/ns/org#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:esadm="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#"
-     xmlns:dcterms="http://purl.org/dc/terms/"
-     xmlns:edintinf="https://edint.es/def/infraestructura#"
      xmlns:schema="https://schema.org/"
-     xmlns:bibo="http://purl.org/ontology/bibo/"
-     xmlns:widoco="https://w3id.org/widoco/vocab#">
-    <owl:Ontology rdf:about="https://edint.es/def/organizaciones#">
+     xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:edintinf="https://edint.es/def/infraestructura#">
+    <owl:Ontology rdf:about="http://www.w3.org/ns/org#">
         <owl:versionIRI rdf:resource="https://edint.es/def/organizaciones/0.1.1"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/org#"/>
+        <dcterms:abstract xml:lang="es">El propósito de esta ontología es proporcionar un vocabulario común para la representación de las organizaciones públicas en España, así como aspectos relacionados con los organigramas dentro de dichas organizaciones. Es una actualización de una versión previa de la ontología que extendía la ontología del W3C para organizaciones (W3C Organization Ontology). Esta versión adapta esa ontología para cubrir los requisitos EDINT. Como cambios más relevantes, elimina las clases Oficina y Unidad con función de Gestión Económica-Presupuestaria, junto con sus propiedades específicas, e incluye Organización Española como subclase de Organización y edintinf:Equipamiento como subclase de Sede.</dcterms:abstract>
+        <dcterms:abstract xml:lang="en">The purpose of this ontology is to provide a common vocabulary for representing public organizations in Spain, as well as aspects related to organizational charts within those organizations. It is an update of a previous version of the ontology that extended the W3C Organization Ontology. This version adapts that ontology to meet EDINT requirements. The most relevant changes include removing the Office and Economic-Budgetary Management Unit classes, along with their specific properties, and including Spanish Organizacion as a subclass of Organization and edintinf:Facility as a subclass of Site.</dcterms:abstract>
+        <dcterms:bibliographicCitation xml:lang="en">EDINT Public Organizations Ontology. EDINT. Revision: v0.1.1.</dcterms:bibliographicCitation>
+        <dcterms:bibliographicCitation xml:lang="es">Ontología EDINT de Organizaciones Públicas. EDINT. Revisión: v0.1.1.</dcterms:bibliographicCitation>
         <dcterms:contributor>Antonio Ibáñez</dcterms:contributor>
         <dcterms:contributor>Carlos Jiménez</dcterms:contributor>
         <dcterms:contributor>David Rey Jordán</dcterms:contributor>
@@ -30,58 +35,95 @@
         <dcterms:contributor>María Dolores Hernández</dcterms:contributor>
         <dcterms:contributor>María Jesús Fernández Ruíz</dcterms:contributor>
         <dcterms:contributor>Toño Velasco</dcterms:contributor>
-        <dcterms:title xml:lang="en">EDINT Public Organizations Ontology</dcterms:title>
-        <rdfs:label xml:lang="es">Organizaciones Públicas</rdfs:label>
-        <rdfs:label xml:lang="en">Public Organizations</rdfs:label>
-        <dcterms:creator rdf:parseType="Resource">
-            <foaf:name>Daniel Doña</foaf:name>
-            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-05-07</dcterms:created>
+        <dcterms:creator>
+            <rdf:Description>
+                <foaf:name>Daniel Doña</foaf:name>
+                <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+            </rdf:Description>
         </dcterms:creator>
-        <dcterms:creator rdf:parseType="Resource">
-            <foaf:name>Edna Ruckhaus</foaf:name>
-            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        <dcterms:creator>
+            <rdf:Description>
+                <foaf:name>Edna Ruckhaus</foaf:name>
+                <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+            </rdf:Description>
         </dcterms:creator>
-        <dcterms:creator rdf:parseType="Resource">
-            <foaf:name>Lucía Sánchez</foaf:name>
-            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        <dcterms:creator>
+            <rdf:Description>
+                <foaf:name>Lucía Sánchez</foaf:name>
+                <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+            </rdf:Description>
         </dcterms:creator>
-        <dcterms:creator rdf:parseType="Resource">
-            <foaf:name>Socorro Bernardos</foaf:name>
-            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        <dcterms:creator>
+            <rdf:Description>
+                <foaf:name>Socorro Bernardos</foaf:name>
+                <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+            </rdf:Description>
         </dcterms:creator>
-        <dcterms:creator rdf:parseType="Resource">
-            <foaf:name>Óscar Corcho</foaf:name>
-            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        <dcterms:creator>
+            <rdf:Description>
+                <foaf:name>Óscar Corcho</foaf:name>
+                <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+            </rdf:Description>
         </dcterms:creator>
         <dcterms:description xml:lang="es">El propósito de esta ontología es proporcionar un vocabulario común para la representación de las organizaciones públicas en España, así como aspectos relacionados con los organigramas dentro de dichas organizaciones.
 Es una actualización de una versión previa de la ontología que extendía la ontología del W3C para organizaciones (W3C Organization Ontology). Esta versión adapta esa ontología para cubrir los requisitos EDINT. Como cambios más relevantes, elimina las clases Oficina y Unidad con función de Gestión Económica-Presupuestaria, junto con sus propiedades específicas, e incluye edintinf:Equipamiento como subclase de Sede .</dcterms:description>
         <dcterms:description xml:lang="en">The purpose of this ontology is to provide a common vocabulary for representing public organizations in Spain, as well as aspects related to organizational charts within those organizations.
 It is an update of a previous version of the ontology that extended the W3C Organization Ontology. This version adapts that ontology to meet EDINT requirements. The most relevant changes include removing the Office and Economic-Budgetary Management Unit classes, along with their specific properties, and including edintinf:Facility as a subclass of Site.</dcterms:description>
-        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:issued>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0"/>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:modified>
+        <dcterms:publisher>
+            <rdf:Description>
+                <foaf:homepage rdf:resource="https://www.femp.es/"/>
+                <foaf:name>FEMP</foaf:name>
+                <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
+            </rdf:Description>
+        </dcterms:publisher>
+        <dcterms:title xml:lang="en">EDINT Public Organizations Ontology</dcterms:title>
         <dcterms:title xml:lang="es">Ontología EDINT de Organizaciones Públicas</dcterms:title>
         <vann:preferredNamespacePrefix>edintorg</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/organizaciones#"/>
-        <owl:versionInfo>0.1.1</owl:versionInfo>
-        <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-05-07</dcterms:created>
-        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:issued>
-        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:modified>
+        <rdfs:label xml:lang="es">Organizaciones Públicas</rdfs:label>
+        <rdfs:label xml:lang="en">Public Organizations</rdfs:label>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-organizaciones/releases/tag/v0.1.0"/>
+        <owl:versionInfo>0.1.1</owl:versionInfo>
         <schema:codeRepository rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-organizaciones"/>
+        <schema:creativeWorkStatus xml:lang="en">Ontology Specification</schema:creativeWorkStatus>
         <schema:funding>Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)</schema:funding>
-    <dcterms:publisher rdf:parseType="Resource">
-        <foaf:name>FEMP</foaf:name>
-        <foaf:homepage rdf:resource="https://www.femp.es/"/>
-        <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
-    </dcterms:publisher>
-    <dcterms:bibliographicCitation xml:lang="es">Ontología EDINT de Organizaciones Públicas. EDINT. Revisión: v0.1.1.</dcterms:bibliographicCitation>
-    <dcterms:bibliographicCitation xml:lang="en">EDINT Public Organizations Ontology. EDINT. Revision: v0.1.1.</dcterms:bibliographicCitation>
-    <schema:creativeWorkStatus xml:lang="en">Ontology Specification</schema:creativeWorkStatus>
-    <dcterms:abstract xml:lang="es">El propósito de esta ontología es proporcionar un vocabulario común para la representación de las organizaciones públicas en España, así como aspectos relacionados con los organigramas dentro de dichas organizaciones. Es una actualización de una versión previa de la ontología que extendía la ontología del W3C para organizaciones (W3C Organization Ontology). Esta versión adapta esa ontología para cubrir los requisitos EDINT. Como cambios más relevantes, elimina las clases Oficina y Unidad con función de Gestión Económica-Presupuestaria, junto con sus propiedades específicas, e incluye Organización Española como subclase de Organización y edintinf:Equipamiento como subclase de Sede.</dcterms:abstract>
-    <dcterms:abstract xml:lang="en">The purpose of this ontology is to provide a common vocabulary for representing public organizations in Spain, as well as aspects related to organizational charts within those organizations. It is an update of a previous version of the ontology that extended the W3C Organization Ontology. This version adapts that ontology to meet EDINT requirements. The most relevant changes include removing the Office and Economic-Budgetary Management Unit classes, along with their specific properties, and including Spanish Organizacion as a subclass of Organization and edintinf:Facility as a subclass of Site.</dcterms:abstract>
-</owl:Ontology>
-    <foaf:Organization rdf:about="https://oeg.fi.upm.es/">
-        <foaf:name>Ontology Engineering Group, UPM</foaf:name>
-    </foaf:Organization>
+        <widoco:jsonldSerialization>ontology.jsonld</widoco:jsonldSerialization>
+        <widoco:ntSerialization>ontology.nt</widoco:ntSerialization>
+        <widoco:rdfxmlSerialization>ontology.rdf</widoco:rdfxmlSerialization>
+        <widoco:turtleSerialization>ontology.ttl</widoco:turtleSerialization>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <rdfs:label xml:lang="en">DBpedia Ontology</rdfs:label>
+                <rdfs:label xml:lang="es">DBpedia Ontology</rdfs:label>
+                <widoco:vocabularyIRI rdf:resource="http://dbpedia.org/ontology"/>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <rdfs:label xml:lang="es">Territorio (esadm)</rdfs:label>
+                <rdfs:label xml:lang="en">Territory (esadm)</rdfs:label>
+                <widoco:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"/>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <rdfs:label xml:lang="en">ORG</rdfs:label>
+                <rdfs:label xml:lang="es">ORG</rdfs:label>
+                <widoco:vocabularyIRI rdf:resource="http://www.w3.org/ns/org#"/>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <rdfs:label xml:lang="es">Infraestructura (edintinf)</rdfs:label>
+                <rdfs:label xml:lang="en">Infrastructure (edintinf)</rdfs:label>
+                <widoco:vocabularyIRI rdf:resource="https://edint.es/def/infraestructura"/>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+    </owl:Ontology>
     
 
 
@@ -111,6 +153,18 @@ It is an update of a previous version of the ontology that extended the W3C Orga
     <!-- http://purl.org/dc/elements/1.1/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
     
 
 
@@ -144,6 +198,12 @@ It is an update of a previous version of the ontology that extended the W3C Orga
     
 
 
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
     <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
@@ -156,6 +216,72 @@ It is an update of a previous version of the ontology that extended the W3C Orga
     
 
 
+    <!-- http://purl.org/vocab/vann/usageNote -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/usageNote"/>
+    
+
+
+    <!-- https://schema.org/affiliation -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/affiliation"/>
+    
+
+
+    <!-- https://schema.org/codeRepository -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/codeRepository"/>
+    
+
+
+    <!-- https://schema.org/creativeWorkStatus -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/creativeWorkStatus"/>
+    
+
+
+    <!-- https://schema.org/funding -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/funding"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#jsonldSerialization -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#jsonldSerialization"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#ntSerialization -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#ntSerialization"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#rdfxmlSerialization -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#rdfxmlSerialization"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#turtleSerialization -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#turtleSerialization"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#vocabularyIRI -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#vocabularyIRI"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#vocabularyLabel -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#vocabularyLabel"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -164,6 +290,14 @@ It is an update of a previous version of the ontology that extended the W3C Orga
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
+        <rdfs:comment rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    </owl:ObjectProperty>
     
 
 
@@ -264,14 +398,6 @@ It is an update of a previous version of the ontology that extended the W3C Orga
     
 
 
-    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
-        <rdfs:comment rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -356,48 +482,24 @@ Example: In the case of the Official State Gazette (BOE), reference would be mad
     
 
 
+    <!-- http://data.europa.eu/m8g/PublicOrganisation -->
+
+    <owl:Class rdf:about="http://data.europa.eu/m8g/PublicOrganisation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <vann:usageNote xml:lang="en">Organizations which exist to provide services for its citizens and companies are called Public Organizations. The Public Organization class represents the organization. One organization may comprise several sub-organizations and any organization may have one or more organizational units. Each of these is described using the same properties and relationships. 
+
+This definition is consistent with the more detailed definition of a &quot;public sector body&quot; as given in the PSI Directive: &quot;the State, regional or local authorities, bodies governed by public law and associations formed by one or several such authorities or one or several such bodies governed by public law&quot;. It further defines a body governed by public law as any body &quot;(a) established for the specific purpose of meeting needs in the general interest, not having an industrial or commercial character; and (b) having legal personality; and (c) financed, for the most part by the State, or regional or local authorities, or other bodies governed by public law; or subject to management supervision by those bodies; or having an administrative, managerial or supervisory board, more than half of whose members are appointed by the State, regional or local authorities or by other bodies governed by public law&quot;.</vann:usageNote>
+        <rdfs:comment xml:lang="en">Mandatory class. Any Organization that is defined as being part of the public sector by a legal framework at any level.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/"/>
+        <rdfs:label xml:lang="en">Public Organisation</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://dbpedia.org/ontology/GovernmentalAdministrativeRegion -->
 
     <owl:Class rdf:about="http://dbpedia.org/ontology/GovernmentalAdministrativeRegion">
         <rdfs:isDefinedBy rdf:resource="http://dbpedia.org/ontology/"/>
-    </owl:Class>
-    
-
-
-    <!-- https://edint.es/def/organizaciones#OrganicUnit -->
-
-    <owl:Class rdf:about="https://edint.es/def/organizaciones#OrganicUnit">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#OrganizationalUnit"/>
-        <rdfs:comment xml:lang="en">Organic Unit with a hierarchical level greater than 1, which depends on a Public Law Entity.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Unidad Orgánica con un nivel jerárquico mayor a 1, que depende de una Entidad de Derecho Público.</rdfs:comment>
-        <rdfs:label xml:lang="en">Organic Unit</rdfs:label>
-        <rdfs:label xml:lang="es">Unidad Orgánica</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://edint.es/def/organizaciones#Organization -->
-
-    <owl:Class rdf:about="https://edint.es/def/organizaciones#Organization">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
-        <rdfs:comment xml:lang="es">Organización de la administración pública en España</rdfs:comment>
-        <rdfs:comment xml:lang="en">Organization of the public administration in Spain</rdfs:comment>
-        <rdfs:label xml:lang="es">Organización</rdfs:label>
-        <rdfs:label xml:lang="en">Organization</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://edint.es/def/organizaciones#PublicLawEntity -->
-
-    <owl:Class rdf:about="https://edint.es/def/organizaciones#PublicLawEntity">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
-        <rdfs:comment xml:lang="es">Organismo creado para satisfacer necesidades de interés general, excluidos los de carácter mercantil o industrial; que tenga personalidad jurídica; que su actividad se financie mayoritariamente con fondos públicos o que su gestión esté sometida al control público o bien que más de la mitad de los miembros de su órgano de administración, de dirección o vigilancia, sean nombrados por el sector público.
-
-Morales, F. J. (2007). La Contratación del Sector Público. Recuperado el 17 de febrero de 2015, de https://books.google.es/books?id=RozAMdGDMDIC&amp;pg=PA1&amp;lpg=PA1&amp;dq=la+contratación+del+sector+publico+f.+javier+escrihuela</rdfs:comment>
-        <rdfs:label xml:lang="en">An organization created to meet needs of general interest, excluding those of a commercial or industrial nature; that has legal personality; whose activity is financed mainly with public funds or whose management is subject to public control or in which more than half of the members of its administrative, management or supervisory body are appointed by the public sector.</rdfs:label>
-        <rdfs:label xml:lang="es">Entidad de Derecho Público</rdfs:label>
-        <rdfs:label xml:lang="en">Public Law Entity</rdfs:label>
     </owl:Class>
     
 
@@ -447,6 +549,20 @@ Morales, F. J. (2007). La Contratación del Sector Público. Recuperado el 17 de
     
 
 
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </rdf:Description>
+    
+
+
     <!-- https://edint.es/def/infraestructura#Facility -->
 
     <owl:Class rdf:about="https://edint.es/def/infraestructura#Facility">
@@ -456,9 +572,41 @@ Morales, F. J. (2007). La Contratación del Sector Público. Recuperado el 17 de
     
 
 
-    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+    <!-- https://edint.es/def/organizaciones#OrganicUnit -->
 
-    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <owl:Class rdf:about="https://edint.es/def/organizaciones#OrganicUnit">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#OrganizationalUnit"/>
+        <rdfs:comment xml:lang="en">Organic Unit with a hierarchical level greater than 1, which depends on a Public Law Entity.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Unidad Orgánica con un nivel jerárquico mayor a 1, que depende de una Entidad de Derecho Público.</rdfs:comment>
+        <rdfs:label xml:lang="en">Organic Unit</rdfs:label>
+        <rdfs:label xml:lang="es">Unidad Orgánica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://edint.es/def/organizaciones#Organization -->
+
+    <owl:Class rdf:about="https://edint.es/def/organizaciones#Organization">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/m8g/PublicOrganisation"/>
+        <rdfs:comment xml:lang="es">Organización de la administración pública en España</rdfs:comment>
+        <rdfs:comment xml:lang="en">Organization of the public administration in Spain</rdfs:comment>
+        <rdfs:label xml:lang="es">Organización</rdfs:label>
+        <rdfs:label xml:lang="en">Organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://edint.es/def/organizaciones#PublicLawEntity -->
+
+    <owl:Class rdf:about="https://edint.es/def/organizaciones#PublicLawEntity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+        <rdfs:comment xml:lang="es">Organismo creado para satisfacer necesidades de interés general, excluidos los de carácter mercantil o industrial; que tenga personalidad jurídica; que su actividad se financie mayoritariamente con fondos públicos o que su gestión esté sometida al control público o bien que más de la mitad de los miembros de su órgano de administración, de dirección o vigilancia, sean nombrados por el sector público.
+
+Morales, F. J. (2007). La Contratación del Sector Público. Recuperado el 17 de febrero de 2015, de https://books.google.es/books?id=RozAMdGDMDIC&amp;pg=PA1&amp;lpg=PA1&amp;dq=la+contratación+del+sector+publico+f.+javier+escrihuela</rdfs:comment>
+        <rdfs:label xml:lang="en">An organization created to meet needs of general interest, excluding those of a commercial or industrial nature; that has legal personality; whose activity is financed mainly with public funds or whose management is subject to public control or in which more than half of the members of its administrative, management or supervisory body are appointed by the public sector.</rdfs:label>
+        <rdfs:label xml:lang="es">Entidad de Derecho Público</rdfs:label>
+        <rdfs:label xml:lang="en">Public Law Entity</rdfs:label>
+    </owl:Class>
     
 
 
@@ -497,6 +645,105 @@ Morales, F. J. (2007). La Contratación del Sector Público. Recuperado el 17 de
     
 
 
+    <!-- https://oeg.fi.upm.es/ -->
+
+    <owl:NamedIndividual rdf:about="https://oeg.fi.upm.es/">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <foaf:name>Ontology Engineering Group, UPM</foaf:name>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">DBpedia Ontology</rdfs:label>
+        <rdfs:label xml:lang="es">DBpedia Ontology</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://dbpedia.org/ontology"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="es">Territorio (esadm)</rdfs:label>
+        <rdfs:label xml:lang="en">Territory (esadm)</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:homepage rdf:resource="https://www.femp.es/"/>
+        <foaf:name>FEMP</foaf:name>
+        <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Daniel Doña</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="es">Territorio (esadm)</rdfs:label>
+        <rdfs:label xml:lang="en">Territory (esadm)</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Daniel Doña</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Edna Ruckhaus</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Lucía Sánchez</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Socorro Bernardos</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Óscar Corcho</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">ORG</rdfs:label>
+        <rdfs:label xml:lang="es">ORG</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://www.w3.org/ns/org#"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="es">Infraestructura (edintinf)</rdfs:label>
+        <rdfs:label xml:lang="en">Infrastructure (edintinf)</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="https://edint.es/def/infraestructura"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Edna Ruckhaus</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Lucía Sánchez</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Socorro Bernardos</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Óscar Corcho</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">ORG</rdfs:label>
+        <rdfs:label xml:lang="es">ORG</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://www.w3.org/ns/org#"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="es">Infraestructura (edintinf)</rdfs:label>
+        <rdfs:label xml:lang="en">Infrastructure (edintinf)</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="https://edint.es/def/infraestructura"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">DBpedia Ontology</rdfs:label>
+        <rdfs:label xml:lang="es">DBpedia Ontology</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://dbpedia.org/ontology"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:homepage rdf:resource="https://www.femp.es/"/>
+        <foaf:name>FEMP</foaf:name>
+        <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
+    </rdf:Description>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -523,50 +770,12 @@ Morales, F. J. (2007). La Contratación del Sector Público. Recuperado el 17 de
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent">
         <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-    </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
         <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
     </rdf:Description>
-    <!-- Nombres de fichero de las serializaciones generadas (vocabulario Widoco) -->
-    <rdf:Description rdf:about="https://edint.es/def/organizaciones#">
-        <widoco:rdfxmlSerialization>ontology.rdf</widoco:rdfxmlSerialization>
-        <widoco:turtleSerialization>ontology.ttl</widoco:turtleSerialization>
-        <widoco:ntSerialization>ontology.nt</widoco:ntSerialization>
-        <widoco:jsonldSerialization>ontology.jsonld</widoco:jsonldSerialization>
-            <widoco:vocabularyLabel>
-            <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="http://dbpedia.org/ontology"/>
-                <rdfs:label xml:lang="es">DBpedia Ontology</rdfs:label>
-                <rdfs:label xml:lang="en">DBpedia Ontology</rdfs:label>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-        <widoco:vocabularyLabel>
-            <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"/>
-                <rdfs:label xml:lang="es">Territorio (esadm)</rdfs:label>
-                <rdfs:label xml:lang="en">Territory (esadm)</rdfs:label>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-        <widoco:vocabularyLabel>
-            <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="http://www.w3.org/ns/org#"/>
-                <rdfs:label xml:lang="es">ORG</rdfs:label>
-                <rdfs:label xml:lang="en">ORG</rdfs:label>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-        <widoco:vocabularyLabel>
-            <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="https://edint.es/def/infraestructura"/>
-                <rdfs:label xml:lang="es">Infraestructura (edintinf)</rdfs:label>
-                <rdfs:label xml:lang="en">Infrastructure (edintinf)</rdfs:label>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-</rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
