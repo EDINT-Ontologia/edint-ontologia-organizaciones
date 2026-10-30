@@ -18,7 +18,7 @@
      xmlns:widoco="https://w3id.org/widoco/vocab#"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:edintinf="https://edint.es/def/infraestructura#">
-    <owl:Ontology rdf:about="http://www.w3.org/ns/org#">
+    <owl:Ontology rdf:about="https://edint.es/def/organizaciones#">
         <owl:versionIRI rdf:resource="https://edint.es/def/organizaciones/0.1.1"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/org#"/>
         <dcterms:abstract xml:lang="es">El propósito de esta ontología es proporcionar un vocabulario común para la representación de las organizaciones públicas en España, así como aspectos relacionados con los organigramas dentro de dichas organizaciones. Es una actualización de una versión previa de la ontología que extendía la ontología del W3C para organizaciones (W3C Organization Ontology). Esta versión adapta esa ontología para cubrir los requisitos EDINT. Como cambios más relevantes, elimina las clases Oficina y Unidad con función de Gestión Económica-Presupuestaria, junto con sus propiedades específicas, e incluye Organización Española como subclase de Organización y edintinf:Equipamiento como subclase de Sede.</dcterms:abstract>
@@ -773,6 +773,14 @@ Morales, F. J. (2007). La Contratación del Sector Público. Recuperado el 17 de
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
         <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
     </rdf:Description>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/organizaciones#hasCompetenceRegion">
+        <rdfs:label xml:lang="es">tiene territorio de competencia</rdfs:label>
+        <rdfs:label xml:lang="en">has competence region</rdfs:label>
+        <rdfs:comment xml:lang="es">Territorio sobre el que una organización ejerce sus competencias.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Territory over which an organization exercises its competences.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/AdministrativeRegion"/>
+    </owl:ObjectProperty>
 </rdf:RDF>
 
 
