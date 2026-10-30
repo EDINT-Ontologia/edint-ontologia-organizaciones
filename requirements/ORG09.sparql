@@ -14,8 +14,8 @@ WHERE {
 
   FILTER(LANG(?statusLabel) = "es" || LANG(?statusLabel) = "")
   FILTER(
-    CONTAINS(LCASE(STR(?statusLabel)), "Anulado") ||
-    CONTAINS(LCASE(STR(?statusLabel)), "Extinguido")
+    CONTAINS(LCASE(STR(?statusLabel)), "anulado") ||
+    CONTAINS(LCASE(STR(?statusLabel)), "extinguido")
   )
 
   OPTIONAL {

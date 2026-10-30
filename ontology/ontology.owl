@@ -18,7 +18,7 @@
      xmlns:widoco="https://w3id.org/widoco/vocab#"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:edintinf="https://edint.es/def/infraestructura#">
-    <owl:Ontology rdf:about="http://www.w3.org/ns/org#">
+    <owl:Ontology rdf:about="https://edint.es/def/organizaciones#">
         <owl:versionIRI rdf:resource="https://edint.es/def/organizaciones/0.1.1"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/org#"/>
         <dcterms:abstract xml:lang="es">El propósito de esta ontología es proporcionar un vocabulario común para la representación de las organizaciones públicas en España, así como aspectos relacionados con los organigramas dentro de dichas organizaciones. Es una actualización de una versión previa de la ontología que extendía la ontología del W3C para organizaciones (W3C Organization Ontology). Esta versión adapta esa ontología para cubrir los requisitos EDINT. Como cambios más relevantes, elimina las clases Oficina y Unidad con función de Gestión Económica-Presupuestaria, junto con sus propiedades específicas, e incluye Organización Española como subclase de Organización y edintinf:Equipamiento como subclase de Sede.</dcterms:abstract>
@@ -126,7 +126,6 @@ It is an update of a previous version of the ontology that extended the W3C Orga
     </owl:Ontology>
     
 
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -137,150 +136,125 @@ It is an update of a previous version of the ontology that extended the W3C Orga
 
     
 
-
     <!-- http://purl.org/dc/elements/1.1/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
     
-
 
     <!-- http://purl.org/dc/elements/1.1/rights -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
     
 
-
     <!-- http://purl.org/dc/elements/1.1/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
     
-
 
     <!-- http://purl.org/dc/terms/abstract -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
     
 
-
     <!-- http://purl.org/dc/terms/bibliographicCitation -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
     
-
 
     <!-- http://purl.org/dc/terms/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
     
 
-
     <!-- http://purl.org/dc/terms/date -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
     
-
 
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
     
 
-
     <!-- http://purl.org/dc/terms/hasFormat -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasFormat"/>
     
-
 
     <!-- http://purl.org/dc/terms/issued -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
     
 
-
     <!-- http://purl.org/dc/terms/publisher -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
     
-
 
     <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
     
 
-
     <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
     
-
 
     <!-- http://purl.org/vocab/vann/usageNote -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/usageNote"/>
     
 
-
     <!-- https://schema.org/affiliation -->
 
     <owl:AnnotationProperty rdf:about="https://schema.org/affiliation"/>
     
-
 
     <!-- https://schema.org/codeRepository -->
 
     <owl:AnnotationProperty rdf:about="https://schema.org/codeRepository"/>
     
 
-
     <!-- https://schema.org/creativeWorkStatus -->
 
     <owl:AnnotationProperty rdf:about="https://schema.org/creativeWorkStatus"/>
     
-
 
     <!-- https://schema.org/funding -->
 
     <owl:AnnotationProperty rdf:about="https://schema.org/funding"/>
     
 
-
     <!-- https://w3id.org/widoco/vocab#jsonldSerialization -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#jsonldSerialization"/>
     
-
 
     <!-- https://w3id.org/widoco/vocab#ntSerialization -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#ntSerialization"/>
     
 
-
     <!-- https://w3id.org/widoco/vocab#rdfxmlSerialization -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#rdfxmlSerialization"/>
     
-
 
     <!-- https://w3id.org/widoco/vocab#turtleSerialization -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#turtleSerialization"/>
     
 
-
     <!-- https://w3id.org/widoco/vocab#vocabularyIRI -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#vocabularyIRI"/>
     
 
-
     <!-- https://w3id.org/widoco/vocab#vocabularyLabel -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#vocabularyLabel"/>
     
-
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -292,14 +266,12 @@ It is an update of a previous version of the ontology that extended the W3C Orga
 
     
 
-
     <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
         <rdfs:comment rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
     </owl:ObjectProperty>
     
-
 
     <!-- https://edint.es/def/organizaciones#dependsOnRoot -->
 
@@ -313,7 +285,6 @@ It is an update of a previous version of the ontology that extended the W3C Orga
         <rdfs:label xml:lang="en">depends on root organization</rdfs:label>
     </owl:ObjectProperty>
     
-
 
     <!-- https://edint.es/def/organizaciones#hasAdministrationLevel -->
 
@@ -337,7 +308,6 @@ It is an update of a previous version of the ontology that extended the W3C Orga
     </owl:ObjectProperty>
     
 
-
     <!-- https://edint.es/def/organizaciones#hasCompeteceRegion -->
 
     <owl:ObjectProperty rdf:about="https://edint.es/def/organizaciones#hasCompeteceRegion">
@@ -349,7 +319,6 @@ It is an update of a previous version of the ontology that extended the W3C Orga
         <rdfs:label xml:lang="es">tiene ámbito de competencia</rdfs:label>
     </owl:ObjectProperty>
     
-
 
     <!-- https://edint.es/def/organizaciones#hasOrganizationStatus -->
 
@@ -372,7 +341,6 @@ It is an update of a previous version of the ontology that extended the W3C Orga
         <rdfs:label xml:lang="es">tiene estado de organización</rdfs:label>
     </owl:ObjectProperty>
     
-
 
     <!-- https://edint.es/def/organizaciones#hasOrganizationType -->
 
@@ -397,7 +365,6 @@ It is an update of a previous version of the ontology that extended the W3C Orga
     </owl:ObjectProperty>
     
 
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -408,7 +375,6 @@ It is an update of a previous version of the ontology that extended the W3C Orga
 
     
 
-
     <!-- http://purl.org/dc/terms/identifier -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/identifier">
@@ -416,18 +382,16 @@ It is an update of a previous version of the ontology that extended the W3C Orga
     </owl:DatatypeProperty>
     
 
-
     <!-- https://edint.es/def/organizaciones#deregistrationNote -->
 
     <owl:DatatypeProperty rdf:about="https://edint.es/def/organizaciones#deregistrationNote">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Organization"/>
         <rdfs:comment xml:lang="es">Observaciones relacionadas con la baja de una organización.</rdfs:comment>
         <rdfs:label xml:lang="en">Notes related to an organization&apos;s deregistration.</rdfs:label>
-        <rdfs:label>note on the deregistration</rdfs:label>
+
         <rdfs:label xml:lang="es">observación de baja</rdfs:label>
     </owl:DatatypeProperty>
     
-
 
     <!-- https://edint.es/def/organizaciones#externalIdentifier -->
 
@@ -440,7 +404,6 @@ It is an update of a previous version of the ontology that extended the W3C Orga
         <rdfs:label xml:lang="es">identificador externo</rdfs:label>
     </owl:DatatypeProperty>
     
-
 
     <!-- https://edint.es/def/organizaciones#hierarchicalLevel -->
 
@@ -456,7 +419,6 @@ For the root of an administrative level, this field should be 0. For the main (h
     </owl:DatatypeProperty>
     
 
-
     <!-- https://edint.es/def/organizaciones#legalProvision -->
 
     <owl:DatatypeProperty rdf:about="https://edint.es/def/organizaciones#legalProvision">
@@ -470,7 +432,6 @@ Example: In the case of the Official State Gazette (BOE), reference would be mad
     </owl:DatatypeProperty>
     
 
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -480,7 +441,6 @@ Example: In the case of the Official State Gazette (BOE), reference would be mad
      -->
 
     
-
 
     <!-- http://data.europa.eu/m8g/PublicOrganisation -->
 
@@ -495,14 +455,12 @@ This definition is consistent with the more detailed definition of a &quot;publi
     </owl:Class>
     
 
-
     <!-- http://dbpedia.org/ontology/GovernmentalAdministrativeRegion -->
 
     <owl:Class rdf:about="http://dbpedia.org/ontology/GovernmentalAdministrativeRegion">
         <rdfs:isDefinedBy rdf:resource="http://dbpedia.org/ontology/"/>
     </owl:Class>
     
-
 
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia -->
 
@@ -512,7 +470,6 @@ This definition is consistent with the more detailed definition of a &quot;publi
     </owl:Class>
     
 
-
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Comarca -->
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Comarca">
@@ -520,7 +477,6 @@ This definition is consistent with the more detailed definition of a &quot;publi
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#"/>
     </owl:Class>
     
-
 
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito -->
 
@@ -530,7 +486,6 @@ This definition is consistent with the more detailed definition of a &quot;publi
     </owl:Class>
     
 
-
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio -->
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio">
@@ -538,7 +493,6 @@ This definition is consistent with the more detailed definition of a &quot;publi
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#"/>
     </owl:Class>
     
-
 
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia -->
 
@@ -548,12 +502,10 @@ This definition is consistent with the more detailed definition of a &quot;publi
     </owl:Class>
     
 
-
     <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     
-
 
     <!-- http://xmlns.com/foaf/0.1/Organization -->
 
@@ -562,7 +514,6 @@ This definition is consistent with the more detailed definition of a &quot;publi
     </rdf:Description>
     
 
-
     <!-- https://edint.es/def/infraestructura#Facility -->
 
     <owl:Class rdf:about="https://edint.es/def/infraestructura#Facility">
@@ -570,7 +521,6 @@ This definition is consistent with the more detailed definition of a &quot;publi
         <rdfs:isDefinedBy rdf:resource="https://edint.es/def/infraestructura#"/>
     </owl:Class>
     
-
 
     <!-- https://edint.es/def/organizaciones#OrganicUnit -->
 
@@ -583,7 +533,6 @@ This definition is consistent with the more detailed definition of a &quot;publi
     </owl:Class>
     
 
-
     <!-- https://edint.es/def/organizaciones#Organization -->
 
     <owl:Class rdf:about="https://edint.es/def/organizaciones#Organization">
@@ -594,7 +543,6 @@ This definition is consistent with the more detailed definition of a &quot;publi
         <rdfs:label xml:lang="en">Organization</rdfs:label>
     </owl:Class>
     
-
 
     <!-- https://edint.es/def/organizaciones#PublicLawEntity -->
 
@@ -609,7 +557,6 @@ Morales, F. J. (2007). La Contratación del Sector Público. Recuperado el 17 de
     </owl:Class>
     
 
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -620,14 +567,12 @@ Morales, F. J. (2007). La Contratación del Sector Público. Recuperado el 17 de
 
     
 
-
     <!-- https://edint.es/kos/AdministrationLevel -->
 
     <owl:NamedIndividual rdf:about="https://edint.es/kos/AdministrationLevel">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     
-
 
     <!-- https://edint.es/kos/OrganizationStatus -->
 
@@ -636,14 +581,12 @@ Morales, F. J. (2007). La Contratación del Sector Público. Recuperado el 17 de
     </owl:NamedIndividual>
     
 
-
     <!-- https://edint.es/kos/OrganizationType -->
 
     <owl:NamedIndividual rdf:about="https://edint.es/kos/OrganizationType">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     
-
 
     <!-- https://oeg.fi.upm.es/ -->
 
@@ -743,7 +686,6 @@ Morales, F. J. (2007). La Contratación del Sector Público. Recuperado el 17 de
     </rdf:Description>
     
 
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -773,9 +715,15 @@ Morales, F. J. (2007). La Contratación del Sector Público. Recuperado el 17 de
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
         <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
     </rdf:Description>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/organizaciones#hasCompetenceRegion">
+        <rdfs:label xml:lang="es">tiene territorio de competencia</rdfs:label>
+        <rdfs:label xml:lang="en">has competence region</rdfs:label>
+        <rdfs:comment xml:lang="es">Territorio sobre el que una organización ejerce sus competencias.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Territory over which an organization exercises its competences.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/AdministrativeRegion"/>
+    </owl:ObjectProperty>
 </rdf:RDF>
-
-
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
