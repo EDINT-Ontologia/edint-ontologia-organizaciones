@@ -1,22 +1,22 @@
 [ {
   "@id" : "_:genid1",
-  "http://schema.org/affiliation" : [ {
-    "@id" : "https://oeg.fi.upm.es/"
-  } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Daniel Doña"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
   } ]
 }, {
   "@id" : "_:genid10",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Infrastructure (edintinf)"
-  }, {
     "@language" : "es",
-    "@value" : "Infraestructura (edintinf)"
+    "@value" : "DBpedia Ontology"
+  }, {
+    "@language" : "en",
+    "@value" : "DBpedia Ontology"
   } ],
   "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
-    "@id" : "https://edint.es/def/infraestructura"
+    "@id" : "http://dbpedia.org/ontology"
   } ]
 }, {
   "@id" : "_:genid11",
@@ -68,11 +68,11 @@
   } ]
 }, {
   "@id" : "_:genid2",
-  "http://schema.org/affiliation" : [ {
-    "@id" : "https://oeg.fi.upm.es/"
-  } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Edna Ruckhaus"
+    "@value" : "Óscar Corcho"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
   } ]
 }, {
   "@id" : "_:genid21",
@@ -84,42 +84,264 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
-  "@id" : "_:genid3",
-  "http://schema.org/affiliation" : [ {
-    "@id" : "https://oeg.fi.upm.es/"
+  "@id" : "_:genid23",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Territorio (esadm)"
+  }, {
+    "@language" : "en",
+    "@value" : "Territory (esadm)"
   } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Lucía Sánchez"
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"
   } ]
 }, {
-  "@id" : "_:genid4",
-  "http://schema.org/affiliation" : [ {
-    "@id" : "https://oeg.fi.upm.es/"
+  "@id" : "_:genid24",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DBpedia Ontology"
+  }, {
+    "@language" : "es",
+    "@value" : "DBpedia Ontology"
   } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Socorro Bernardos"
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://dbpedia.org/ontology"
   } ]
 }, {
-  "@id" : "_:genid5",
-  "http://schema.org/affiliation" : [ {
-    "@id" : "https://oeg.fi.upm.es/"
-  } ],
+  "@id" : "_:genid25",
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Óscar Corcho"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
   } ]
 }, {
-  "@id" : "_:genid6",
-  "http://schema.org/affiliation" : [ {
-    "@value" : "Federación Española de Municipios y Provincias"
+  "@id" : "_:genid26",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Socorro Bernardos"
   } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Lucía Sánchez"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid28",
   "http://xmlns.com/foaf/0.1/homepage" : [ {
     "@id" : "https://www.femp.es/"
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "FEMP"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@value" : "Federación Española de Municipios y Provincias"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DBpedia Ontology"
+  }, {
+    "@language" : "es",
+    "@value" : "DBpedia Ontology"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://dbpedia.org/ontology"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Socorro Bernardos"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Infraestructura (edintinf)"
+  }, {
+    "@language" : "en",
+    "@value" : "Infrastructure (edintinf)"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "https://edint.es/def/infraestructura"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ORG"
+  }, {
+    "@language" : "es",
+    "@value" : "ORG"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.w3.org/ns/org#"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Daniel Doña"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Territorio (esadm)"
+  }, {
+    "@language" : "en",
+    "@value" : "Territory (esadm)"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Daniel Doña"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "https://www.femp.es/"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "FEMP"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@value" : "Federación Española de Municipios y Provincias"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Socorro Bernardos"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Lucía Sánchez"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Edna Ruckhaus"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Edna Ruckhaus"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Lucía Sánchez"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Infraestructura (edintinf)"
+  }, {
+    "@language" : "en",
+    "@value" : "Infrastructure (edintinf)"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "https://edint.es/def/infraestructura"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ORG"
+  }, {
+    "@language" : "es",
+    "@value" : "ORG"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.w3.org/ns/org#"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Óscar Corcho"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Edna Ruckhaus"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "https://www.femp.es/"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "FEMP"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@value" : "Federación Española de Municipios y Provincias"
   } ]
 }, {
   "@id" : "_:genid7",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Infrastructure (edintinf)"
+  }, {
+    "@language" : "es",
+    "@value" : "Infraestructura (edintinf)"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "https://edint.es/def/infraestructura"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "ORG"
+  }, {
+    "@language" : "en",
+    "@value" : "ORG"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.w3.org/ns/org#"
+  } ]
+}, {
+  "@id" : "_:genid9",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Territory (esadm)"
@@ -131,29 +353,29 @@
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"
   } ]
 }, {
-  "@id" : "_:genid8",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "DBpedia Ontology"
-  }, {
+  "@id" : "http://data.europa.eu/m8g/PublicOrganisation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
     "@language" : "en",
-    "@value" : "DBpedia Ontology"
+    "@value" : "Organizations which exist to provide services for its citizens and companies are called Public Organizations. The Public Organization class represents the organization. One organization may comprise several sub-organizations and any organization may have one or more organizational units. Each of these is described using the same properties and relationships. \n\nThis definition is consistent with the more detailed definition of a \"public sector body\" as given in the PSI Directive: \"the State, regional or local authorities, bodies governed by public law and associations formed by one or several such authorities or one or several such bodies governed by public law\". It further defines a body governed by public law as any body \"(a) established for the specific purpose of meeting needs in the general interest, not having an industrial or commercial character; and (b) having legal personality; and (c) financed, for the most part by the State, or regional or local authorities, or other bodies governed by public law; or subject to management supervision by those bodies; or having an administrative, managerial or supervisory board, more than half of whose members are appointed by the State, regional or local authorities or by other bodies governed by public law\"."
   } ],
-  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
-    "@id" : "http://dbpedia.org/ontology"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Mandatory class. Any Organization that is defined as being part of the public sector by a legal framework at any level."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/m8g/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Public Organisation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/org#Organization"
   } ]
 }, {
-  "@id" : "_:genid9",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "ORG"
-  }, {
-    "@language" : "en",
-    "@value" : "ORG"
-  } ],
-  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
-    "@id" : "http://www.w3.org/ns/org#"
-  } ]
+  "@id" : "http://dbpedia.org/ontology/AdministrativeRegion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://dbpedia.org/ontology/GovernmentalAdministrativeRegion",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -211,16 +433,7 @@
   "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://schema.org/affiliation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://schema.org/codeRepository",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://schema.org/creativeWorkStatus",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://schema.org/funding",
+  "@id" : "http://purl.org/vocab/vann/usageNote",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia",
@@ -321,7 +534,7 @@
     "@id" : "http://www.w3.org/ns/org#Site"
   } ]
 }, {
-  "@id" : "https://edint.es/def/organizaciones#",
+  "@id" : "https://edint.es/def/organizaciones",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/abstract" : [ {
     "@language" : "es",
@@ -385,7 +598,7 @@
     "@value" : "2026-09-17"
   } ],
   "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+    "@id" : "https://creativecommons.org/licenses/by-sa/4.0/"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -407,16 +620,6 @@
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
     "@value" : "https://edint.es/def/organizaciones#"
   } ],
-  "http://schema.org/codeRepository" : [ {
-    "@id" : "https://github.com/EDINT-Ontologia/edint-ontologia-organizaciones"
-  } ],
-  "http://schema.org/creativeWorkStatus" : [ {
-    "@language" : "en",
-    "@value" : "Ontology Specification"
-  } ],
-  "http://schema.org/funding" : [ {
-    "@value" : "Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
     "@value" : "Organizaciones Públicas"
@@ -435,6 +638,16 @@
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "0.1.1"
+  } ],
+  "https://schema.org/codeRepository" : [ {
+    "@id" : "https://github.com/EDINT-Ontologia/edint-ontologia-organizaciones"
+  } ],
+  "https://schema.org/creativeWorkStatus" : [ {
+    "@language" : "en",
+    "@value" : "Ontology Specification"
+  } ],
+  "https://schema.org/funding" : [ {
+    "@value" : "Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)"
   } ],
   "https://w3id.org/widoco/vocab#jsonldSerialization" : [ {
     "@value" : "ontology.jsonld"
@@ -495,7 +708,7 @@
     "@value" : "Organization"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/ns/org#Organization"
+    "@id" : "http://data.europa.eu/m8g/PublicOrganisation"
   } ]
 }, {
   "@id" : "https://edint.es/def/organizaciones#PublicLawEntity",
@@ -559,8 +772,6 @@
   }, {
     "@language" : "es",
     "@value" : "observación de baja"
-  }, {
-    "@value" : "note on the deregistration"
   } ]
 }, {
   "@id" : "https://edint.es/def/organizaciones#externalIdentifier",
@@ -630,6 +841,29 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://dbpedia.org/ontology/GovernmentalAdministrativeRegion"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/organizaciones#hasCompetenceRegion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Territorio sobre el que una organización ejerce sus competencias."
+  }, {
+    "@language" : "en",
+    "@value" : "Territory over which an organization exercises its competences."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/org#Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has competence region"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene territorio de competencia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://dbpedia.org/ontology/AdministrativeRegion"
   } ]
 }, {
   "@id" : "https://edint.es/def/organizaciones#hasOrganizationStatus",
@@ -743,9 +977,22 @@
   } ]
 }, {
   "@id" : "https://oeg.fi.upm.es/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Ontology Engineering Group, UPM"
   } ]
+}, {
+  "@id" : "https://schema.org/affiliation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://schema.org/codeRepository",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://schema.org/creativeWorkStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://schema.org/funding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://w3id.org/widoco/vocab#jsonldSerialization",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]

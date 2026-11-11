@@ -1,76 +1,76 @@
-<https://edint.es/def/organizaciones#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://edint.es/def/organizaciones#> <http://www.w3.org/2002/07/owl#versionIRI> <https://edint.es/def/organizaciones/0.1.1> .
-<https://edint.es/def/organizaciones#> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/org#> .
-<https://edint.es/def/organizaciones#> <http://purl.org/dc/terms/abstract> "El propósito de esta ontología es proporcionar un vocabulario común para la representación de las organizaciones públicas en España, así como aspectos relacionados con los organigramas dentro de dichas organizaciones. Es una actualización de una versión previa de la ontología que extendía la ontología del W3C para organizaciones (W3C Organization Ontology). Esta versión adapta esa ontología para cubrir los requisitos EDINT. Como cambios más relevantes, elimina las clases Oficina y Unidad con función de Gestión Económica-Presupuestaria, junto con sus propiedades específicas, e incluye Organización Española como subclase de Organización y edintinf:Equipamiento como subclase de Sede."@es .
-<https://edint.es/def/organizaciones#> <http://purl.org/dc/terms/abstract> "The purpose of this ontology is to provide a common vocabulary for representing public organizations in Spain, as well as aspects related to organizational charts within those organizations. It is an update of a previous version of the ontology that extended the W3C Organization Ontology. This version adapts that ontology to meet EDINT requirements. The most relevant changes include removing the Office and Economic-Budgetary Management Unit classes, along with their specific properties, and including Spanish Organizacion as a subclass of Organization and edintinf:Facility as a subclass of Site."@en .
-<https://edint.es/def/organizaciones#> <http://purl.org/dc/terms/bibliographicCitation> "EDINT Public Organizations Ontology. EDINT. Revision: v0.1.1."@en .
-<https://edint.es/def/organizaciones#> <http://purl.org/dc/terms/bibliographicCitation> "Ontología EDINT de Organizaciones Públicas. EDINT. Revisión: v0.1.1."@es .
-<https://edint.es/def/organizaciones#> <http://purl.org/dc/terms/contributor> "Antonio Ibáñez" .
-<https://edint.es/def/organizaciones#> <http://purl.org/dc/terms/contributor> "Carlos Jiménez" .
-<https://edint.es/def/organizaciones#> <http://purl.org/dc/terms/contributor> "David Rey Jordán" .
-<https://edint.es/def/organizaciones#> <http://purl.org/dc/terms/contributor> "Imanol Argüeso" .
-<https://edint.es/def/organizaciones#> <http://purl.org/dc/terms/contributor> "José Manuel Crespo" .
-<https://edint.es/def/organizaciones#> <http://purl.org/dc/terms/contributor> "José María Subero" .
-<https://edint.es/def/organizaciones#> <http://purl.org/dc/terms/contributor> "Martín Alvarez" .
-<https://edint.es/def/organizaciones#> <http://purl.org/dc/terms/contributor> "María Dolores Hernández" .
-<https://edint.es/def/organizaciones#> <http://purl.org/dc/terms/contributor> "María Jesús Fernández Ruíz" .
-<https://edint.es/def/organizaciones#> <http://purl.org/dc/terms/contributor> "Toño Velasco" .
-<https://edint.es/def/organizaciones#> <http://purl.org/dc/terms/created> "2026-05-07"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://edint.es/def/organizaciones#> <http://purl.org/dc/terms/creator> _:genid1 .
+<https://edint.es/def/organizaciones> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://edint.es/def/organizaciones> <http://www.w3.org/2002/07/owl#versionIRI> <https://edint.es/def/organizaciones/0.1.1> .
+<https://edint.es/def/organizaciones> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/org#> .
+<https://edint.es/def/organizaciones> <http://purl.org/dc/terms/abstract> "El propósito de esta ontología es proporcionar un vocabulario común para la representación de las organizaciones públicas en España, así como aspectos relacionados con los organigramas dentro de dichas organizaciones. Es una actualización de una versión previa de la ontología que extendía la ontología del W3C para organizaciones (W3C Organization Ontology). Esta versión adapta esa ontología para cubrir los requisitos EDINT. Como cambios más relevantes, elimina las clases Oficina y Unidad con función de Gestión Económica-Presupuestaria, junto con sus propiedades específicas, e incluye Organización Española como subclase de Organización y edintinf:Equipamiento como subclase de Sede."@es .
+<https://edint.es/def/organizaciones> <http://purl.org/dc/terms/abstract> "The purpose of this ontology is to provide a common vocabulary for representing public organizations in Spain, as well as aspects related to organizational charts within those organizations. It is an update of a previous version of the ontology that extended the W3C Organization Ontology. This version adapts that ontology to meet EDINT requirements. The most relevant changes include removing the Office and Economic-Budgetary Management Unit classes, along with their specific properties, and including Spanish Organizacion as a subclass of Organization and edintinf:Facility as a subclass of Site."@en .
+<https://edint.es/def/organizaciones> <http://purl.org/dc/terms/bibliographicCitation> "EDINT Public Organizations Ontology. EDINT. Revision: v0.1.1."@en .
+<https://edint.es/def/organizaciones> <http://purl.org/dc/terms/bibliographicCitation> "Ontología EDINT de Organizaciones Públicas. EDINT. Revisión: v0.1.1."@es .
+<https://edint.es/def/organizaciones> <http://purl.org/dc/terms/contributor> "Antonio Ibáñez" .
+<https://edint.es/def/organizaciones> <http://purl.org/dc/terms/contributor> "Carlos Jiménez" .
+<https://edint.es/def/organizaciones> <http://purl.org/dc/terms/contributor> "David Rey Jordán" .
+<https://edint.es/def/organizaciones> <http://purl.org/dc/terms/contributor> "Imanol Argüeso" .
+<https://edint.es/def/organizaciones> <http://purl.org/dc/terms/contributor> "José Manuel Crespo" .
+<https://edint.es/def/organizaciones> <http://purl.org/dc/terms/contributor> "José María Subero" .
+<https://edint.es/def/organizaciones> <http://purl.org/dc/terms/contributor> "Martín Alvarez" .
+<https://edint.es/def/organizaciones> <http://purl.org/dc/terms/contributor> "María Dolores Hernández" .
+<https://edint.es/def/organizaciones> <http://purl.org/dc/terms/contributor> "María Jesús Fernández Ruíz" .
+<https://edint.es/def/organizaciones> <http://purl.org/dc/terms/contributor> "Toño Velasco" .
+<https://edint.es/def/organizaciones> <http://purl.org/dc/terms/created> "2026-05-07"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://edint.es/def/organizaciones> <http://purl.org/dc/terms/creator> _:genid1 .
+_:genid1 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 _:genid1 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" .
-_:genid1 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> .
-<https://edint.es/def/organizaciones#> <http://purl.org/dc/terms/creator> _:genid2 .
-_:genid2 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" .
-_:genid2 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> .
-<https://edint.es/def/organizaciones#> <http://purl.org/dc/terms/creator> _:genid3 .
-_:genid3 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" .
-_:genid3 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> .
-<https://edint.es/def/organizaciones#> <http://purl.org/dc/terms/creator> _:genid4 .
-_:genid4 <http://xmlns.com/foaf/0.1/name> "Socorro Bernardos" .
-_:genid4 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> .
-<https://edint.es/def/organizaciones#> <http://purl.org/dc/terms/creator> _:genid5 .
-_:genid5 <http://xmlns.com/foaf/0.1/name> "Óscar Corcho" .
-_:genid5 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> .
-<https://edint.es/def/organizaciones#> <http://purl.org/dc/terms/description> "El propósito de esta ontología es proporcionar un vocabulario común para la representación de las organizaciones públicas en España, así como aspectos relacionados con los organigramas dentro de dichas organizaciones.\nEs una actualización de una versión previa de la ontología que extendía la ontología del W3C para organizaciones (W3C Organization Ontology). Esta versión adapta esa ontología para cubrir los requisitos EDINT. Como cambios más relevantes, elimina las clases Oficina y Unidad con función de Gestión Económica-Presupuestaria, junto con sus propiedades específicas, e incluye edintinf:Equipamiento como subclase de Sede ."@es .
-<https://edint.es/def/organizaciones#> <http://purl.org/dc/terms/description> "The purpose of this ontology is to provide a common vocabulary for representing public organizations in Spain, as well as aspects related to organizational charts within those organizations.\nIt is an update of a previous version of the ontology that extended the W3C Organization Ontology. This version adapts that ontology to meet EDINT requirements. The most relevant changes include removing the Office and Economic-Budgetary Management Unit classes, along with their specific properties, and including edintinf:Facility as a subclass of Site."@en .
-<https://edint.es/def/organizaciones#> <http://purl.org/dc/terms/issued> "2026-09-17"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://edint.es/def/organizaciones#> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://edint.es/def/organizaciones#> <http://purl.org/dc/terms/modified> "2026-09-17"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://edint.es/def/organizaciones#> <http://purl.org/dc/terms/publisher> _:genid6 .
+<https://edint.es/def/organizaciones> <http://purl.org/dc/terms/creator> _:genid2 .
+_:genid2 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid2 <http://xmlns.com/foaf/0.1/name> "Óscar Corcho" .
+<https://edint.es/def/organizaciones> <http://purl.org/dc/terms/creator> _:genid3 .
+_:genid3 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid3 <http://xmlns.com/foaf/0.1/name> "Socorro Bernardos" .
+<https://edint.es/def/organizaciones> <http://purl.org/dc/terms/creator> _:genid4 .
+_:genid4 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid4 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" .
+<https://edint.es/def/organizaciones> <http://purl.org/dc/terms/creator> _:genid5 .
+_:genid5 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid5 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" .
+<https://edint.es/def/organizaciones> <http://purl.org/dc/terms/description> "El propósito de esta ontología es proporcionar un vocabulario común para la representación de las organizaciones públicas en España, así como aspectos relacionados con los organigramas dentro de dichas organizaciones.\nEs una actualización de una versión previa de la ontología que extendía la ontología del W3C para organizaciones (W3C Organization Ontology). Esta versión adapta esa ontología para cubrir los requisitos EDINT. Como cambios más relevantes, elimina las clases Oficina y Unidad con función de Gestión Económica-Presupuestaria, junto con sus propiedades específicas, e incluye edintinf:Equipamiento como subclase de Sede ."@es .
+<https://edint.es/def/organizaciones> <http://purl.org/dc/terms/description> "The purpose of this ontology is to provide a common vocabulary for representing public organizations in Spain, as well as aspects related to organizational charts within those organizations.\nIt is an update of a previous version of the ontology that extended the W3C Organization Ontology. This version adapts that ontology to meet EDINT requirements. The most relevant changes include removing the Office and Economic-Budgetary Management Unit classes, along with their specific properties, and including edintinf:Facility as a subclass of Site."@en .
+<https://edint.es/def/organizaciones> <http://purl.org/dc/terms/issued> "2026-09-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://edint.es/def/organizaciones> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-sa/4.0/> .
+<https://edint.es/def/organizaciones> <http://purl.org/dc/terms/modified> "2026-09-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://edint.es/def/organizaciones> <http://purl.org/dc/terms/publisher> _:genid6 .
+_:genid6 <https://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
 _:genid6 <http://xmlns.com/foaf/0.1/name> "FEMP" .
 _:genid6 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> .
-_:genid6 <http://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
-<https://edint.es/def/organizaciones#> <http://purl.org/dc/terms/title> "EDINT Public Organizations Ontology"@en .
-<https://edint.es/def/organizaciones#> <http://purl.org/dc/terms/title> "Ontología EDINT de Organizaciones Públicas"@es .
-<https://edint.es/def/organizaciones#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "edintorg" .
-<https://edint.es/def/organizaciones#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://edint.es/def/organizaciones#" .
-<https://edint.es/def/organizaciones#> <http://schema.org/codeRepository> <https://github.com/EDINT-Ontologia/edint-ontologia-organizaciones> .
-<https://edint.es/def/organizaciones#> <http://schema.org/creativeWorkStatus> "Ontology Specification"@en .
-<https://edint.es/def/organizaciones#> <http://schema.org/funding> "Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)" .
-<https://edint.es/def/organizaciones#> <http://www.w3.org/2000/01/rdf-schema#label> "Organizaciones Públicas"@es .
-<https://edint.es/def/organizaciones#> <http://www.w3.org/2000/01/rdf-schema#label> "Public Organizations"@en .
-<https://edint.es/def/organizaciones#> <http://www.w3.org/2002/07/owl#priorVersion> <https://github.com/EDINT-Ontologia/edint-ontologia-organizaciones/releases/tag/v0.1.0> .
-<https://edint.es/def/organizaciones#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.1" .
-<https://edint.es/def/organizaciones#> <https://w3id.org/widoco/vocab#jsonldSerialization> "ontology.jsonld" .
-<https://edint.es/def/organizaciones#> <https://w3id.org/widoco/vocab#ntSerialization> "ontology.nt" .
-<https://edint.es/def/organizaciones#> <https://w3id.org/widoco/vocab#rdfxmlSerialization> "ontology.rdf" .
-<https://edint.es/def/organizaciones#> <https://w3id.org/widoco/vocab#turtleSerialization> "ontology.ttl" .
-<https://edint.es/def/organizaciones#> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid7 .
-_:genid7 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
-_:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "Territory (esadm)"@en .
-_:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "Territorio (esadm)"@es .
-<https://edint.es/def/organizaciones#> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid8 .
-_:genid8 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://dbpedia.org/ontology> .
-_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "DBpedia Ontology"@es .
-_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "DBpedia Ontology"@en .
-<https://edint.es/def/organizaciones#> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid9 .
-_:genid9 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/ns/org#> .
-_:genid9 <http://www.w3.org/2000/01/rdf-schema#label> "ORG"@es .
-_:genid9 <http://www.w3.org/2000/01/rdf-schema#label> "ORG"@en .
-<https://edint.es/def/organizaciones#> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid10 .
-_:genid10 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://edint.es/def/infraestructura> .
-_:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "Infrastructure (edintinf)"@en .
-_:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "Infraestructura (edintinf)"@es .
+<https://edint.es/def/organizaciones> <http://purl.org/dc/terms/title> "EDINT Public Organizations Ontology"@en .
+<https://edint.es/def/organizaciones> <http://purl.org/dc/terms/title> "Ontología EDINT de Organizaciones Públicas"@es .
+<https://edint.es/def/organizaciones> <http://purl.org/vocab/vann/preferredNamespacePrefix> "edintorg" .
+<https://edint.es/def/organizaciones> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://edint.es/def/organizaciones#" .
+<https://edint.es/def/organizaciones> <http://www.w3.org/2000/01/rdf-schema#label> "Organizaciones Públicas"@es .
+<https://edint.es/def/organizaciones> <http://www.w3.org/2000/01/rdf-schema#label> "Public Organizations"@en .
+<https://edint.es/def/organizaciones> <http://www.w3.org/2002/07/owl#priorVersion> <https://github.com/EDINT-Ontologia/edint-ontologia-organizaciones/releases/tag/v0.1.0> .
+<https://edint.es/def/organizaciones> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.1" .
+<https://edint.es/def/organizaciones> <https://schema.org/codeRepository> <https://github.com/EDINT-Ontologia/edint-ontologia-organizaciones> .
+<https://edint.es/def/organizaciones> <https://schema.org/creativeWorkStatus> "Ontology Specification"@en .
+<https://edint.es/def/organizaciones> <https://schema.org/funding> "Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)" .
+<https://edint.es/def/organizaciones> <https://w3id.org/widoco/vocab#jsonldSerialization> "ontology.jsonld" .
+<https://edint.es/def/organizaciones> <https://w3id.org/widoco/vocab#ntSerialization> "ontology.nt" .
+<https://edint.es/def/organizaciones> <https://w3id.org/widoco/vocab#rdfxmlSerialization> "ontology.rdf" .
+<https://edint.es/def/organizaciones> <https://w3id.org/widoco/vocab#turtleSerialization> "ontology.ttl" .
+<https://edint.es/def/organizaciones> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid7 .
+_:genid7 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://edint.es/def/infraestructura> .
+_:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "Infrastructure (edintinf)"@en .
+_:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "Infraestructura (edintinf)"@es .
+<https://edint.es/def/organizaciones> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid8 .
+_:genid8 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/ns/org#> .
+_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "ORG"@es .
+_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "ORG"@en .
+<https://edint.es/def/organizaciones> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid9 .
+_:genid9 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
+_:genid9 <http://www.w3.org/2000/01/rdf-schema#label> "Territory (esadm)"@en .
+_:genid9 <http://www.w3.org/2000/01/rdf-schema#label> "Territorio (esadm)"@es .
+<https://edint.es/def/organizaciones> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid10 .
+_:genid10 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://dbpedia.org/ontology> .
+_:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "DBpedia Ontology"@es .
+_:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "DBpedia Ontology"@en .
 # 
 # 
 # #################################################################
@@ -119,17 +119,20 @@ _:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "Infraestructura (edintin
 # http://purl.org/vocab/vann/preferredNamespaceUri
 <http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://schema.org/affiliation
-<http://schema.org/affiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# http://purl.org/vocab/vann/usageNote
+<http://purl.org/vocab/vann/usageNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://schema.org/codeRepository
-<http://schema.org/codeRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# https://schema.org/affiliation
+<https://schema.org/affiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://schema.org/creativeWorkStatus
-<http://schema.org/creativeWorkStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# https://schema.org/codeRepository
+<https://schema.org/codeRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://schema.org/funding
-<http://schema.org/funding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# https://schema.org/creativeWorkStatus
+<https://schema.org/creativeWorkStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/funding
+<https://schema.org/funding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # https://w3id.org/widoco/vocab#jsonldSerialization
 <https://w3id.org/widoco/vocab#jsonldSerialization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -201,6 +204,16 @@ _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <https://edint.es/def/organizaciones#hasCompeteceRegion> <http://www.w3.org/2000/01/rdf-schema#label> "has competence region"@en .
 <https://edint.es/def/organizaciones#hasCompeteceRegion> <http://www.w3.org/2000/01/rdf-schema#label> "tiene ámbito de competencia"@es .
 # 
+# https://edint.es/def/organizaciones#hasCompetenceRegion
+<https://edint.es/def/organizaciones#hasCompetenceRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/organizaciones#hasCompetenceRegion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/org#Organization> .
+<https://edint.es/def/organizaciones#hasCompetenceRegion> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/ontology/AdministrativeRegion> .
+<http://dbpedia.org/ontology/AdministrativeRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://edint.es/def/organizaciones#hasCompetenceRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "Territorio sobre el que una organización ejerce sus competencias."@es .
+<https://edint.es/def/organizaciones#hasCompetenceRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "Territory over which an organization exercises its competences."@en .
+<https://edint.es/def/organizaciones#hasCompetenceRegion> <http://www.w3.org/2000/01/rdf-schema#label> "has competence region"@en .
+<https://edint.es/def/organizaciones#hasCompetenceRegion> <http://www.w3.org/2000/01/rdf-schema#label> "tiene territorio de competencia"@es .
+# 
 # https://edint.es/def/organizaciones#hasOrganizationStatus
 <https://edint.es/def/organizaciones#hasOrganizationStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://edint.es/def/organizaciones#hasOrganizationStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/organizaciones#Organization> .
@@ -261,7 +274,6 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <https://edint.es/def/organizaciones#deregistrationNote> <http://www.w3.org/2000/01/rdf-schema#comment> "Observaciones relacionadas con la baja de una organización."@es .
 <https://edint.es/def/organizaciones#deregistrationNote> <http://www.w3.org/2000/01/rdf-schema#label> "Notes related to an organization's deregistration."@en .
 <https://edint.es/def/organizaciones#deregistrationNote> <http://www.w3.org/2000/01/rdf-schema#label> "observación de baja"@es .
-<https://edint.es/def/organizaciones#deregistrationNote> <http://www.w3.org/2000/01/rdf-schema#label> "note on the deregistration" .
 # 
 # https://edint.es/def/organizaciones#externalIdentifier
 <https://edint.es/def/organizaciones#externalIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -297,6 +309,16 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # #
 # #################################################################
 # 
+# 
+# http://data.europa.eu/m8g/PublicOrganisation
+<http://data.europa.eu/m8g/PublicOrganisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/m8g/PublicOrganisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/org#Organization> .
+<http://data.europa.eu/m8g/PublicOrganisation> <http://purl.org/vocab/vann/usageNote> "Organizations which exist to provide services for its citizens and companies are called Public Organizations. The Public Organization class represents the organization. One organization may comprise several sub-organizations and any organization may have one or more organizational units. Each of these is described using the same properties and relationships. \n\nThis definition is consistent with the more detailed definition of a \"public sector body\" as given in the PSI Directive: \"the State, regional or local authorities, bodies governed by public law and associations formed by one or several such authorities or one or several such bodies governed by public law\". It further defines a body governed by public law as any body \"(a) established for the specific purpose of meeting needs in the general interest, not having an industrial or commercial character; and (b) having legal personality; and (c) financed, for the most part by the State, or regional or local authorities, or other bodies governed by public law; or subject to management supervision by those bodies; or having an administrative, managerial or supervisory board, more than half of whose members are appointed by the State, regional or local authorities or by other bodies governed by public law\"."@en .
+<http://data.europa.eu/m8g/PublicOrganisation> <http://www.w3.org/2000/01/rdf-schema#comment> "Mandatory class. Any Organization that is defined as being part of the public sector by a legal framework at any level."@en .
+<http://data.europa.eu/m8g/PublicOrganisation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/m8g/> .
+<http://data.europa.eu/m8g/PublicOrganisation> <http://www.w3.org/2000/01/rdf-schema#label> "Public Organisation"@en .
+# 
+# http://dbpedia.org/ontology/AdministrativeRegion
 # 
 # http://dbpedia.org/ontology/GovernmentalAdministrativeRegion
 <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -345,7 +367,7 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # 
 # https://edint.es/def/organizaciones#Organization
 <https://edint.es/def/organizaciones#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://edint.es/def/organizaciones#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/org#Organization> .
+<https://edint.es/def/organizaciones#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/m8g/PublicOrganisation> .
 <https://edint.es/def/organizaciones#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "Organización de la administración pública en España"@es .
 <https://edint.es/def/organizaciones#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "Organization of the public administration in Spain"@en .
 <https://edint.es/def/organizaciones#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organización"@es .
@@ -380,6 +402,60 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <https://edint.es/kos/OrganizationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://edint.es/kos/OrganizationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 # 
+# https://oeg.fi.upm.es/
+<https://oeg.fi.upm.es/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://oeg.fi.upm.es/> <http://xmlns.com/foaf/0.1/name> "Ontology Engineering Group, UPM" .
+# 
+_:genid23 <http://www.w3.org/2000/01/rdf-schema#label> "Territorio (esadm)"@es .
+_:genid23 <http://www.w3.org/2000/01/rdf-schema#label> "Territory (esadm)"@en .
+_:genid23 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
+_:genid24 <http://www.w3.org/2000/01/rdf-schema#label> "DBpedia Ontology"@en .
+_:genid24 <http://www.w3.org/2000/01/rdf-schema#label> "DBpedia Ontology"@es .
+_:genid24 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://dbpedia.org/ontology> .
+_:genid25 <http://xmlns.com/foaf/0.1/name> "Óscar Corcho" .
+_:genid25 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid26 <http://xmlns.com/foaf/0.1/name> "Socorro Bernardos" .
+_:genid26 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid27 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" .
+_:genid27 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid28 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> .
+_:genid28 <http://xmlns.com/foaf/0.1/name> "FEMP" .
+_:genid28 <https://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
+_:genid29 <http://www.w3.org/2000/01/rdf-schema#label> "DBpedia Ontology"@en .
+_:genid29 <http://www.w3.org/2000/01/rdf-schema#label> "DBpedia Ontology"@es .
+_:genid29 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://dbpedia.org/ontology> .
+_:genid30 <http://www.w3.org/2000/01/rdf-schema#label> "Infraestructura (edintinf)"@es .
+_:genid30 <http://www.w3.org/2000/01/rdf-schema#label> "Infrastructure (edintinf)"@en .
+_:genid30 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://edint.es/def/infraestructura> .
+_:genid31 <http://www.w3.org/2000/01/rdf-schema#label> "ORG"@en .
+_:genid31 <http://www.w3.org/2000/01/rdf-schema#label> "ORG"@es .
+_:genid31 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/ns/org#> .
+_:genid32 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" .
+_:genid32 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid33 <http://www.w3.org/2000/01/rdf-schema#label> "Territorio (esadm)"@es .
+_:genid33 <http://www.w3.org/2000/01/rdf-schema#label> "Territory (esadm)"@en .
+_:genid33 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
+_:genid34 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" .
+_:genid34 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid35 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> .
+_:genid35 <http://xmlns.com/foaf/0.1/name> "FEMP" .
+_:genid35 <https://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
+_:genid36 <http://xmlns.com/foaf/0.1/name> "Socorro Bernardos" .
+_:genid36 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid37 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" .
+_:genid37 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid38 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" .
+_:genid38 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid39 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" .
+_:genid39 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid40 <http://www.w3.org/2000/01/rdf-schema#label> "Infraestructura (edintinf)"@es .
+_:genid40 <http://www.w3.org/2000/01/rdf-schema#label> "Infrastructure (edintinf)"@en .
+_:genid40 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://edint.es/def/infraestructura> .
+_:genid41 <http://www.w3.org/2000/01/rdf-schema#label> "ORG"@en .
+_:genid41 <http://www.w3.org/2000/01/rdf-schema#label> "ORG"@es .
+_:genid41 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/ns/org#> .
+_:genid42 <http://xmlns.com/foaf/0.1/name> "Óscar Corcho" .
+_:genid42 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 # 
 # 
 # #################################################################
@@ -404,7 +480,5 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
 # 
 <http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
-# 
-<https://oeg.fi.upm.es/> <http://xmlns.com/foaf/0.1/name> "Ontology Engineering Group, UPM" .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

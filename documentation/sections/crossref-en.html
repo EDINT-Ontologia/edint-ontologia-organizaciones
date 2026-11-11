@@ -13,6 +13,7 @@ This section provides details for each class and property defined by Public Orga
   <li><a href="#OrganicUnit" title="https://edint.es/def/organizaciones#OrganicUnit">Organic Unit</a></li>
   <li><a href="#Organization" title="https://edint.es/def/organizaciones#Organization">Organization</a></li>
   <li><a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia" title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia"> <span>Provincia</span> </a></li>
+  <li><a href="#http://data.europa.eu/m8g/PublicOrganisation" title="http://data.europa.eu/m8g/PublicOrganisation">Public Organisation</a></li>
  </ul>
  <div class="entity" id="PublicLawEntity">
   <h3>An organization created to meet needs of general interest, excluding those of a commercial or industrial nature; that has legal personality; whose activity is financed mainly with public funds or whose management is subject to public control or in which more than half of the members of its administrative, management or supervisory body are appointed by the public sector.<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
@@ -149,7 +150,7 @@ This section provides details for each class and property defined by Public Orga
   <dl class="description">
    <dt>has super-classes</dt>
    <dd>
-    <a href="http://www.w3.org/ns/org#Organization" target="_blank" title="http://www.w3.org/ns/org#Organization">Organization</a> <sup class="type-c" title="class">c</sup>
+    <a href="#http://data.europa.eu/m8g/PublicOrganisation" title="http://data.europa.eu/m8g/PublicOrganisation">Public Organisation</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>is in domain of</dt>
    <dd>
@@ -177,12 +178,36 @@ This section provides details for each class and property defined by Public Orga
    </dd>
   </dl>
  </div>
+ <div class="entity" id="http://data.europa.eu/m8g/PublicOrganisation">
+  <h3>Public Organisation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://data.europa.eu/m8g/PublicOrganisation</p>
+  <div class="comment">
+   <span class="markdown">Mandatory class. Any Organization that is defined as being part of the public sector by a legal framework at any level.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>Is defined by</dt>
+   <dd>
+    <a href="http://data.europa.eu/m8g/">http://data.europa.eu/m8g/</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>has super-classes</dt>
+   <dd>
+    <a href="http://www.w3.org/ns/org#Organization" target="_blank" title="http://www.w3.org/ns/org#Organization">Organization</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>has sub-classes</dt>
+   <dd>
+    <a href="#Organization" title="https://edint.es/def/organizaciones#Organization">Organization</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
  <h3 id="properties" class="list">Object Properties</h3>
  <ul class="hlist">
   <li><a href="#dependsOnRoot" title="https://edint.es/def/organizaciones#dependsOnRoot">depends on root organization</a></li>
   <li><a href="#hasAdministrationLevel" title="https://edint.es/def/organizaciones#hasAdministrationLevel">has administration level</a></li>
   <li><a href="#hasCompeteceRegion" title="https://edint.es/def/organizaciones#hasCompeteceRegion">has competence region</a></li>
+  <li><a href="#hasCompetenceRegion" title="https://edint.es/def/organizaciones#hasCompetenceRegion">has competence region</a></li>
   <li><a href="#hasOrganizationStatus" title="https://edint.es/def/organizaciones#hasOrganizationStatus">has organization status</a></li>
   <li><a href="#hasOrganizationType" title="https://edint.es/def/organizaciones#hasOrganizationType">has organization type</a></li>
   <li><a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme"> <span>in Scheme</span> </a></li>
@@ -244,6 +269,25 @@ This section provides details for each class and property defined by Public Orga
     <dt>has range</dt>
     <dd>
      <a href="#http://dbpedia.org/ontology/GovernmentalAdministrativeRegion" title="http://dbpedia.org/ontology/GovernmentalAdministrativeRegion">Governmental Administrative Region</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasCompetenceRegion">
+  <h3>has competence region<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://edint.es/def/organizaciones#hasCompetenceRegion</p>
+  <div class="comment">
+   <span class="markdown">Territory over which an organization exercises its competences.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>has domain</dt>
+    <dd>
+     <a href="http://www.w3.org/ns/org#Organization" target="_blank" title="http://www.w3.org/ns/org#Organization">Organization</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>has range</dt>
+    <dd>
+     <a href="http://dbpedia.org/ontology/AdministrativeRegion" target="_blank" title="http://dbpedia.org/ontology/AdministrativeRegion">Administrative Region</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -393,9 +437,10 @@ This section provides details for each class and property defined by Public Orga
   </div>
  </div>
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
- <h3 id="namedindividuals" class="list">Named Individuals</h3>
+ <h3 id="namedindividuals-headline" class="list">Named Individuals</h3>
  <ul class="hlist">
   <li><a href="#https://edint.es/kos/AdministrationLevel" title="https://edint.es/kos/AdministrationLevel"> <span>Administration Level</span> </a></li>
+  <li><a href="#https://oeg.fi.upm.es/" title="https://oeg.fi.upm.es/"> <span>https://oeg.fi.upm.es/</span> </a></li>
   <li><a href="#https://edint.es/kos/OrganizationStatus" title="https://edint.es/kos/OrganizationStatus"> <span>Organization Status</span> </a></li>
   <li><a href="#https://edint.es/kos/OrganizationType" title="https://edint.es/kos/OrganizationType"> <span>Organization Type</span> </a></li>
  </ul>
@@ -408,6 +453,10 @@ This section provides details for each class and property defined by Public Orga
     <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
+ </div>
+ <div class="entity" id="https://oeg.fi.upm.es/">
+  <h3>https://oeg.fi.upm.es/<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://oeg.fi.upm.es/</p>
  </div>
  <div class="entity" id="https://edint.es/kos/OrganizationStatus">
   <h3>Organization Status<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
