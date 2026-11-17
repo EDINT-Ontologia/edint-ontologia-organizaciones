@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+*.log
+.shacl_*.ttl
+.shacl_data*.ttl
+.shacl_shapes*.ttl

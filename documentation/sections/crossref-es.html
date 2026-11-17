@@ -12,6 +12,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
   <li><a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio" title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio"> <span>Municipio</span> </a></li>
   <li><a href="#Organization" title="https://edint.es/def/organizaciones#Organization">Organización</a></li>
   <li><a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia" title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia"> <span>Provincia</span> </a></li>
+  <li><a href="#http://data.europa.eu/m8g/PublicOrganisation" title="http://data.europa.eu/m8g/PublicOrganisation">Public Organisation</a></li>
   <li><a href="#OrganicUnit" title="https://edint.es/def/organizaciones#OrganicUnit">Unidad Orgánica</a></li>
  </ul>
  <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia">
@@ -136,7 +137,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
   <dl class="description">
    <dt>tiene superclases</dt>
    <dd>
-    <a href="http://www.w3.org/ns/org#Organization" target="_blank" title="http://www.w3.org/ns/org#Organization">organización</a> <sup class="type-c" title="clase">c</sup>
+    <a href="#http://data.europa.eu/m8g/PublicOrganisation" title="http://data.europa.eu/m8g/PublicOrganisation">Public Organisation</a> <sup class="type-c" title="clase">c</sup>
    </dd>
    <dt>en dominio de</dt>
    <dd>
@@ -164,6 +165,29 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
    </dd>
   </dl>
  </div>
+ <div class="entity" id="http://data.europa.eu/m8g/PublicOrganisation">
+  <h3>Public Organisation<sup class="type-c" title="clase">c</sup> <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a> </span></h3>
+  <p><strong>IRI:</strong> http://data.europa.eu/m8g/PublicOrganisation</p>
+  <div class="comment">
+   <span class="markdown">Mandatory class. Any Organization that is defined as being part of the public sector by a legal framework at any level.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>Definida por</dt>
+   <dd>
+    <a href="http://data.europa.eu/m8g/">http://data.europa.eu/m8g/</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>tiene superclases</dt>
+   <dd>
+    <a href="http://www.w3.org/ns/org#Organization" target="_blank" title="http://www.w3.org/ns/org#Organization">organización</a> <sup class="type-c" title="clase">c</sup>
+   </dd>
+   <dt>tiene subclases</dt>
+   <dd>
+    <a href="#Organization" title="https://edint.es/def/organizaciones#Organization">Organización</a> <sup class="type-c" title="clase">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="OrganicUnit">
   <h3>Unidad Orgánica<sup class="type-c" title="clase">c</sup> <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a> </span></h3>
   <p><strong>IRI:</strong> https://edint.es/def/organizaciones#OrganicUnit</p>
@@ -184,6 +208,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
   <li><a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme"> <span>in Scheme</span> </a></li>
   <li><a href="#hasOrganizationStatus" title="https://edint.es/def/organizaciones#hasOrganizationStatus">tiene estado de organización</a></li>
   <li><a href="#hasAdministrationLevel" title="https://edint.es/def/organizaciones#hasAdministrationLevel">tiene nivel de administración</a></li>
+  <li><a href="#hasCompetenceRegion" title="https://edint.es/def/organizaciones#hasCompetenceRegion">tiene territorio de competencia</a></li>
   <li><a href="#hasOrganizationType" title="https://edint.es/def/organizaciones#hasOrganizationType">tiene tipo de organización</a></li>
   <li><a href="#hasCompeteceRegion" title="https://edint.es/def/organizaciones#hasCompeteceRegion">tiene ámbito de competencia</a></li>
  </ul>
@@ -251,6 +276,25 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
     <dt>rango</dt>
     <dd>
      <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="clase">c</sup> <span class="logic">and</span> (<a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a> <sup class="type-op" title="Propiedad entre objetos">op</sup> <span class="logic">value</span> <a href="#https://edint.es/kos/AdministrationLevel" title="https://edint.es/kos/AdministrationLevel">Administration Level</a> <sup class="type-ni" title="Individuo">ni</sup>)
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasCompetenceRegion">
+  <h3>tiene territorio de competencia<sup class="type-op" title="Propiedad entre objetos">op</sup> <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a> </span></h3>
+  <p><strong>IRI:</strong> https://edint.es/def/organizaciones#hasCompetenceRegion</p>
+  <div class="comment">
+   <span class="markdown">Territorio sobre el que una organización ejerce sus competencias.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>dominio</dt>
+    <dd>
+     <a href="http://www.w3.org/ns/org#Organization" target="_blank" title="http://www.w3.org/ns/org#Organization">organización</a> <sup class="type-c" title="clase">c</sup>
+    </dd>
+    <dt>rango</dt>
+    <dd>
+     <a href="http://dbpedia.org/ontology/AdministrativeRegion" target="_blank" title="http://dbpedia.org/ontology/AdministrativeRegion">Administrative Region</a> <sup class="type-c" title="clase">c</sup>
     </dd>
    </dl>
   </div>
@@ -393,9 +437,10 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
   </div>
  </div>
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
- <h3 id="namedindividuals" class="list">Individuos</h3>
+ <h3 id="namedindividuals-headline" class="list">Individuos</h3>
  <ul class="hlist">
   <li><a href="#https://edint.es/kos/AdministrationLevel" title="https://edint.es/kos/AdministrationLevel"> <span>Administration Level</span> </a></li>
+  <li><a href="#https://oeg.fi.upm.es/" title="https://oeg.fi.upm.es/"> <span>https://oeg.fi.upm.es/</span> </a></li>
   <li><a href="#https://edint.es/kos/OrganizationStatus" title="https://edint.es/kos/OrganizationStatus"> <span>Organization Status</span> </a></li>
   <li><a href="#https://edint.es/kos/OrganizationType" title="https://edint.es/kos/OrganizationType"> <span>Organization Type</span> </a></li>
  </ul>
@@ -408,6 +453,10 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
     <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a> <sup class="type-c" title="clase">c</sup>
    </dd>
   </dl>
+ </div>
+ <div class="entity" id="https://oeg.fi.upm.es/">
+  <h3>https://oeg.fi.upm.es/<sup class="type-ni" title="Individuo">ni</sup> <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#namedindividuals">Índice de individuos</a> </span></h3>
+  <p><strong>IRI:</strong> https://oeg.fi.upm.es/</p>
  </div>
  <div class="entity" id="https://edint.es/kos/OrganizationStatus">
   <h3>Organization Status<sup class="type-ni" title="Individuo">ni</sup> <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#namedindividuals">Índice de individuos</a> </span></h3>
