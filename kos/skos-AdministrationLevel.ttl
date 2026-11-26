@@ -44,7 +44,7 @@ edintkosadmlev:1 a skos:Concept ;
   	skos:prefLabel "Administración General del Estado"@es ;
     skos:prefLabel "Country General Administration"@en .
 	
-edintkosadmlev:1 a skos:Concept ;
+edintkosadmlev:2 a skos:Concept ;
 	skos:inScheme edintkos:AdministrationLevel ;
     skos:notation "2" ;
   	skos:prefLabel "Administración autonómica"@es ;
